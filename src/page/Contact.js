@@ -101,9 +101,9 @@ const Contact = () => {
         <h1 className='text-2xl mb-5'>Contact Us</h1>
         <p className='mb-5'>We would love to hear from you. Reach out to us via any of the channels below, and our team will get back to you as soon as possible.</p>
         <ul className='list-disc list-inside mt-5'>
-          <li>Email: info@dutumgroup.com</li>
-          <li>Phone: +234-123-456-7890</li>
-          <li>Address: Dutum Group Headquarters, Lagos, Nigeria</li>
+          <li>Email: info@planworks.com</li>
+          <li>Phone: +234-907-388-1123</li>
+          <li>Address: PlanWorks Group Headquarters, Kaduna, Nigeria</li>
           <li>Working Hours: Monday - Friday, 9 AM - 5 PM</li>
         </ul>
       </div>
