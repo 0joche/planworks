@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Logo from '../images/logo.jpeg';
 import { Link } from 'react-router-dom';
-import { IoIosSearch } from "react-icons/io";
+import { IoIosSearch, IoIosMenu, IoIosClose } from "react-icons/io";
 
 // Import images directly
 import planImage from '../images/plan.jpg';
@@ -13,6 +13,7 @@ const images = [planImage, engineImage, siteImage];
 const Header = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPopupVisible, setIsPopupVisible] = useState(false); // State to manage popup visibility
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage hamburger menu visibility
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,6 +25,10 @@ const Header = () => {
 
   const togglePopup = () => {
     setIsPopupVisible(!isPopupVisible); // Toggle popup visibility
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Toggle hamburger menu visibility
   };
 
   return (
@@ -44,25 +49,31 @@ const Header = () => {
       </div>
 
       <main className='relative z-10'>
-        <ul className='ml-20 flex flex-row'>
+        <ul className='ml-20 flex flex-row items-center justify-between'>
           <li className='flex flex-row items-center'>
             <img src={Logo} alt='PlanWorks' className='w-[50px] h-[50px] mt-10 mr-5 rounded-3xl' />
             <span className='text-3xl text-white mt-7'>Planworks</span>
           </li>
 
-          <li className='mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white'>
-            <Link to="/" className='hover:underline'>Home</Link>
-            <Link to="/about" className='hover:underline'>About</Link>
-            <Link to="/services" className='hover:underline'>Services</Link>
-            <Link to="/team" className='hover:underline'>Our Team</Link>
-            <Link to="/projects" className='hover:underline'>Projects</Link>
-            <Link to="/blog" className='hover:underline'>Blog</Link>
-            <Link to="/csr" className='hover:underline'>CSR</Link>
-            <Link to="/careers" className='hover:underline'>Careers</Link>
-            <Link to="/contact" className='hover:underline'>Contact</Link>
+          {/* Hamburger Icon */}
+          <li className='mt-[45px] mr-20 text-2xl text-white cursor-pointer lg:hidden' onClick={toggleMenu}>
+            {isMenuOpen ? <IoIosClose className='text-3xl' /> : <IoIosMenu className='text-3xl' />}
           </li>
 
-          <li className='ml-[150px] mt-[45px] text-white cursor-pointer' onClick={togglePopup}>
+          {/* Navigation Links */}
+          <li className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row absolute lg:static top-24 left-0 bg-black bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
+            <Link to="/" className='hover:underline p-2 lg:p-0'>Home</Link>
+            <Link to="/about" className='hover:underline p-2 lg:p-0'>About</Link>
+            <Link to="/services" className='hover:underline p-2 lg:p-0'>Services</Link>
+            <Link to="/team" className='hover:underline p-2 lg:p-0'>Our Team</Link>
+            <Link to="/projects" className='hover:underline p-2 lg:p-0'>Projects</Link>
+            <Link to="/blog" className='hover:underline p-2 lg:p-0'>Blog</Link>
+            <Link to="/csr" className='hover:underline p-2 lg:p-0'>CSR</Link>
+            <Link to="/careers" className='hover:underline p-2 lg:p-0'>Careers</Link>
+            <Link to="/contact" className='hover:underline p-2 lg:p-0'>Contact</Link>
+          </li>
+
+          <li className='ml-[150px] mt-[45px] text-white cursor-pointer lg:block hidden' onClick={togglePopup}>
             <IoIosSearch className='text-3xl ml-20'/>
           </li>
         </ul>

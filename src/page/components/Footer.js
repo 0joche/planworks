@@ -5,11 +5,14 @@ const Footer = () => {
   const currentYear = new Date().getFullYear(); // Get the current year
 
   return (
-    <div className=' flex flex-row border-t-[5px] text-white mt-[250px] gap-[1000px] bg-orange-500 border-gray-500 pt-[100px] text-center'>
-      <p className='text-lg '>
+    <div className='flex flex-col md:flex-row justify-between items-center border-t-[5px] text-white mt-[300px] bg-orange-500 border-gray-500 py-10 px-5  md:px-20'>
+      {/* Copyright Text */}
+      <p className='text-lg mb-5 md:mb-0'>
         &copy; {currentYear} PlanWorks Company. All rights reserved.
       </p>
-      <div className='flex justify-center gap-2 space-x-6'>
+
+      {/* Social Icons */}
+      <div className='flex justify-center gap-6'>
         <a
           href='https://www.instagram.com'
           target='_blank'
