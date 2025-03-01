@@ -56,7 +56,7 @@ const Services = () => {
 
               {/* Navigation Links */}
               <li
-                className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}
+                className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row absolute lg:static top-24 bg-black left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}
               >
                 <Link to="/" className="hover:underline p-2 lg:p-0">Home</Link>
                 <Link to="/about" className="hover:underline p-2 lg:p-0">About</Link>
