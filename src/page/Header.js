@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Logo from '../images/logo.jpeg';
 import { Link } from 'react-router-dom';
-import { IoIosSearch, IoIosMenu, IoIosClose } from "react-icons/io";
+import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
+import { useSearch } from '../../src/page/components/SearchContext'; // Import the useSearch hook
 
 // Import images directly
 import planImage from '../images/plan.jpg';
@@ -12,8 +13,17 @@ const images = [planImage, engineImage, siteImage];
 
 const Header = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isPopupVisible, setIsPopupVisible] = useState(false); // State to manage popup visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage hamburger menu visibility
+
+  // Use the global search context
+  const {
+    isPopupVisible,
+    togglePopup,
+    searchQuery,
+    searchResults,
+    handleSearchInputChange,
+    highlightText,
+  } = useSearch();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,10 +32,6 @@ const Header = () => {
 
     return () => clearInterval(interval);
   }, []);
-
-  const togglePopup = () => {
-    setIsPopupVisible(!isPopupVisible); // Toggle popup visibility
-  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen); // Toggle hamburger menu visibility
@@ -36,13 +42,16 @@ const Header = () => {
       {/* Background Slideshow */}
       <div className='absolute top-0 left-0 w-full h-full z-0'>
         {images.map((image, index) => (
-          <div key={index} className={`absolute w-full h-full transition-opacity duration-1000 ${currentSlide === index ? 'opacity-100' : 'opacity-0'}`}>
-            <img 
-              src={image} 
-              alt="slideshow" 
-              className='w-full h-full object-cover'
-            />
-            {/* Black overlay */}
+          <div
+            key={index}
+            className={`absolute w-full h-full transition-opacity duration-1000 ${currentSlide === index ? 'opacity-100' : 'opacity-0'}`}
+            style={{
+              backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 255, 0.6), rgba(0, 0, 139, 0.7)), url(${image})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            {/* Black overlay (optional, if you still want it) */}
             <div className='absolute top-0 left-0 w-full h-full bg-black bg-opacity-50'></div>
           </div>
         ))}
@@ -61,7 +70,7 @@ const Header = () => {
           </li>
 
           {/* Navigation Links */}
-          <li className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row absolute lg:static top-24 left-0 bg-black bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
+          <li className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
             <Link to="/" className='hover:underline p-2 lg:p-0'>Home</Link>
             <Link to="/about" className='hover:underline p-2 lg:p-0'>About</Link>
             <Link to="/services" className='hover:underline p-2 lg:p-0'>Services</Link>
@@ -73,6 +82,7 @@ const Header = () => {
             <Link to="/contact" className='hover:underline p-2 lg:p-0'>Contact</Link>
           </li>
 
+          {/* Search Icon */}
           <li className='ml-[150px] mt-[45px] text-white cursor-pointer lg:block hidden' onClick={togglePopup}>
             <IoIosSearch className='text-3xl ml-20'/>
           </li>
@@ -84,14 +94,32 @@ const Header = () => {
             isPopupVisible ? 'translate-y-0' : '-translate-y-full'
           }`}
         >
-          <div className='container mx-auto p-5 flex justify-center items-center h-[200px]'>
+          <div className='container mx-auto p-5 flex flex-col justify-center items-center h-[300px]'>
             <input
               type="text"
               placeholder="Search..."
               className='w-1/2 p-3 rounded-lg bg-white text-black focus:outline-none'
+              value={searchQuery}
+              onChange={handleSearchInputChange}
             />
+            {/* Display search results */}
+            {searchResults.length > 0 && (
+              <div className='w-1/2 bg-white mt-5 rounded-lg shadow-lg max-h-[200px] overflow-y-auto'>
+                {searchResults.map((result) => (
+                  <Link
+                    key={result.id}
+                    to={result.link}
+                    className='block p-3 hover:bg-gray-100 text-black'
+                    onClick={togglePopup}
+                  >
+                    <div className='font-bold'>{highlightText(result.title, searchQuery)}</div>
+                    <div className='text-sm'>{highlightText(result.description, searchQuery)}</div>
+                  </Link>
+                ))}
+              </div>
+            )}
             <button
-              className='ml-4 p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600'
+              className='mt-5 p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600'
               onClick={togglePopup}
             >
               Close
@@ -101,6 +129,6 @@ const Header = () => {
       </main>
     </div>
   );
-}
+};
 
 export default Header;

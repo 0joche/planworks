@@ -13,7 +13,7 @@ const Main = () => {
           <div>
             <h1 className='text-center text-3xl'>Our Business Units</h1>
             <p className='w-full md:w-[550px] text-center mx-auto mt-10 px-4 md:px-0'>
-              Dutum is a world-class engineering and construction company with a reputation for technical excellence founded on more than 20 years of experience. We are a construction company in Lagos operating across all Nigeria States and Africa.
+            PlanWorks is a leading Project Planning, Scheduling, Monitoring, and Management firm with a reputation for delivering technical excellence built on over 4 years of experience. Based in Lagos, we provide innovative project management solutions across all Nigerian states and Africa, ensuring seamless project execution from inception to completion.
             </p>
           </div>
         </div>
