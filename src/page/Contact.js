@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Site from '../images/pexels.jpg';
+import Site from '../images/pexel.jpg';
 import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
@@ -35,7 +35,7 @@ const Contact = () => {
           <ul className="ml-5 lg:ml-20 flex items-center justify-between">
             <li className="flex items-center">
               <img src={Logo} alt="PlanWorks" className="w-[50px] h-[50px] mt-10 mr-5 rounded-3xl" />
-              <span className="text-3xl text-white mt-7">Planworks</span>
+              <span className="text-3xl text-white mt-7 font-bold">Planworks Consulting</span>
             </li>
 
             {/* Hamburger Icon */}
@@ -44,7 +44,7 @@ const Contact = () => {
             </li>
 
             {/* Navigation Links */}
-            <li className={`mt-[45px] text-2xl flex gap-6 lg:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row absolute lg:static top-24 bg-black left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
+            <li className={`mt-[45px] text-2xl flex gap-6 lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'} flex-col font-bold lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
               {['Home', 'About', 'Services', 'Our Team', 'Projects', 'Blog', 'CSR', 'Careers', 'Contact'].map((item, index) => (
                 <Link key={index} to={`/${item.toLowerCase().replace(' ', '')}`} className="hover:underline p-2 lg:p-0">{item}</Link>
               ))}
@@ -94,16 +94,16 @@ const Contact = () => {
           )}
         </main>
 
-        <h1 className='text-3xl mt-[200px] ml-[20px] lg:ml-[100px]'>Contact</h1>
+        <h1 className='text-3xl mt-[200px] ml-[20px] lg:ml-[100px] font-bold'>Contact Us</h1>
       </div>
 
       <div className='mt-10 p-5'>
         <h1 className='text-2xl mb-5'>Contact Us</h1>
         <p className='mb-5'>We would love to hear from you. Reach out to us via any of the channels below, and our team will get back to you as soon as possible.</p>
         <ul className='list-disc list-inside mt-5'>
-          <li>Email: info@planworks.com</li>
+          <li>Email: info@planworks.com.ng</li>
           <li>Phone: +234-907-388-1123</li>
-          <li>Address: PlanWorks Group Headquarters, Kaduna, Nigeria</li>
+          <li>Address: PlanWorks Group Headquarters, Abuja, Nigeria</li>
           <li>Working Hours: Monday - Friday, 9 AM - 5 PM</li>
         </ul>
       </div>

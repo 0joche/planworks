@@ -27,7 +27,7 @@ const Csr = () => {
     <div className='text-black'>
       <div
         className="h-[400px] relative bg-cover bg-center text-white"
-        style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 255, 0.7), rgba(0, 0, 139, 0.9)), url(${Site})` }}
+        style={{ backgroundImage: `linear-gradient(to bottom, rgba(114, 114, 223, 0.7), rgba(0, 0, 139, 0.9)), url(${Site})` }}
       >
         <div className="absolute inset-0 bg-opacity-50"></div>
 
@@ -35,7 +35,7 @@ const Csr = () => {
           <ul className="ml-5 lg:ml-20 flex items-center justify-between">
             <li className="flex items-center">
               <img src={Logo} alt="PlanWorks" className="w-[50px] h-[50px] mt-10 mr-5 rounded-3xl" />
-              <span className="text-3xl text-white mt-7">Planworks</span>
+              <span className="text-3xl text-white mt-7 font-bold">Planworks Consulting</span>
             </li>
 
             {/* Hamburger Icon */}
@@ -44,7 +44,7 @@ const Csr = () => {
             </li>
 
             {/* Navigation Links */}
-            <li className={`mt-[45px] text-2xl flex gap-6 lg:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col bg-black lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
+            <li className={`mt-[45px] text-2xl flex gap-6 lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'} flex-col  lg:flex-row absolute lg:static  font-bold top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
               {['Home', 'About', 'Services', 'Our Team', 'Projects', 'Blog', 'CSR', 'Careers', 'Contact'].map((item, index) => (
                 <Link key={index} to={`/${item.toLowerCase().replace(' ', '')}`} className="hover:underline p-2 lg:p-0">{item}</Link>
               ))}

@@ -6,10 +6,19 @@ import { useSearch } from '../../src/page/components/SearchContext'; // Import t
 
 // Import images directly
 import planImage from '../images/plan.jpg';
-import engineImage from '../images/engine.jpg';
-import siteImage from '../images/site.jpg';
+import engineImage from '../images/data.jpg';
+import siteImage from '../images/pexel.jpg';
+import enginesImage from '../images/data.jpg';
+import plansImage from '../images/planwork.jpg';
 
-const images = [planImage, engineImage, siteImage];
+const images = [
+  { src: planImage, text: 'Optimizing workflows, mitigating risks, and ensuring on-time project delivery with advanced methodologies.' },
+  { src: engineImage, text: 'Expert Time Impact Analysis (TIA) and forensic delay analysis to safeguard your project’s timeline and profitability.' },
+  { src: siteImage, text: 'Providing data-driven solutions and strategic consulting to enhance efficiency, compliance, and cost control in your projects.' },
+  { src: planImage, text: 'Empowering businesses with performance analytics, lean methodologies, and digital transformation strategies for sustainable growth.' },
+  { src: enginesImage, text: 'Harnessing AI, automation, and cloud-based technologies to streamline project execution and maximize efficiency.' },
+  { src: plansImage, text: 'Providing data-driven solutions and strategic consulting to enhance efficiency, compliance, and cost control in your projects.' },
+];
 
 const Header = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -46,13 +55,19 @@ const Header = () => {
             key={index}
             className={`absolute w-full h-full transition-opacity duration-1000 ${currentSlide === index ? 'opacity-100' : 'opacity-0'}`}
             style={{
-              backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 255, 0.6), rgba(0, 0, 139, 0.7)), url(${image})`,
+              backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 255, 0.6), rgba(0, 0, 139, 0.7)), url(${image.src})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
           >
             {/* Black overlay (optional, if you still want it) */}
             <div className='absolute top-0 left-0 w-full h-full bg-black bg-opacity-50'></div>
+
+            {/* Text Overlay */}
+            <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white'>
+              <h1 className='text-5xl font-bold mb-4'>{image.text}</h1>
+              <p className='text-xl'>Discover our innovative solutions and services.</p>
+            </div>
           </div>
         ))}
       </div>
@@ -61,7 +76,7 @@ const Header = () => {
         <ul className='ml-20 flex flex-row items-center justify-between'>
           <li className='flex flex-row items-center'>
             <img src={Logo} alt='PlanWorks' className='w-[50px] h-[50px] mt-10 mr-5 rounded-3xl' />
-            <span className='text-3xl text-white mt-7'>Planworks</span>
+            <span className='text-3xl text-white mt-7 font-bold'>Planworks Consulting</span>
           </li>
 
           {/* Hamburger Icon */}
@@ -70,16 +85,16 @@ const Header = () => {
           </li>
 
           {/* Navigation Links */}
-          <li className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row absolute lg:static bg-black top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
-            <Link to="/" className='hover:underline p-2 lg:p-0'>Home</Link>
-            <Link to="/about" className='hover:underline p-2 lg:p-0'>About</Link>
-            <Link to="/services" className='hover:underline p-2 lg:p-0'>Services</Link>
-            <Link to="/team" className='hover:underline p-2 lg:p-0'>Our Team</Link>
-            <Link to="/projects" className='hover:underline p-2 lg:p-0'>Projects</Link>
-            <Link to="/blog" className='hover:underline p-2 lg:p-0'>Blog</Link>
-            <Link to="/csr" className='hover:underline p-2 lg:p-0'>CSR</Link>
-            <Link to="/careers" className='hover:underline p-2 lg:p-0'>Careers</Link>
-            <Link to="/contact" className='hover:underline p-2 lg:p-0'>Contact</Link>
+          <li className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'}  font-bold flex-col lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
+            <Link to="/" className='hover:underline p-2 lg:p-0 font-bold'>Home</Link>
+            <Link to="/about" className='hover:underline p-2 lg:p-0 font-bold'>About</Link>
+            <Link to="/services" className='hover:underline p-2 lg:p-0 font-bold'>Services</Link>
+            <Link to="/team" className='hover:underline p-2 lg:p-0 font-bold'>Our Team</Link>
+            <Link to="/projects" className='hover:underline p-2 lg:p-0 font-bold'>Projects</Link>
+            <Link to="/blog" className='hover:underline p-2 lg:p-0 font-bold'>Blog</Link>
+            <Link to="/csr" className='hover:underline p-2 lg:p-0 font-bold'>CSR</Link>
+            <Link to="/careers" className='hover:underline p-2 lg:p-0 font-bold'>Careers</Link>
+            <Link to="/contact" className='hover:underline p-2 lg:p-0 font-bold'>Contact</Link>
           </li>
 
           {/* Search Icon */}

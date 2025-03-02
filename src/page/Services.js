@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../images/logo.jpeg';
-import Site from '../images/pexels.jpg';
+import Site from '../images/datas.jpg';
 import { Link } from 'react-router-dom';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { useSearch } from '../page/components/SearchContext'; // Import the useSearch hook
@@ -30,7 +30,7 @@ const Services = () => {
         {/* Header with Background Image */}
         <div
           className="h-[400px] relative bg-cover bg-center text-white"
-          style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 255, 0.7), rgba(0, 0, 139, 0.9)), url(${Site})` }}
+          style={{ backgroundImage: `linear-gradient(to bottom, rgba(114, 114, 223, 0.7), rgba(0, 0, 139, 0.9)), url(${Site})` }}
         >
           {/* Overlay for better readability */}
           <div className="absolute inset-0 bg-opacity-50"></div>
@@ -43,7 +43,7 @@ const Services = () => {
                   alt="PlanWorks"
                   className="w-[50px] h-[50px] mt-10 mr-5 rounded-3xl"
                 />
-                <span className="text-3xl text-white mt-7">Planworks</span>
+                <span className="text-3xl text-white mt-7 font-bold">Planworks Consulting</span>
               </li>
 
               {/* Hamburger Icon for Mobile */}
@@ -56,7 +56,7 @@ const Services = () => {
 
               {/* Navigation Links */}
               <li
-                className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row absolute lg:static top-24 bg-black left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}
+                className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'}  font-bold flex-col lg:flex-row absolute lg:static top-24  left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}
               >
                 <Link to="/" className="hover:underline p-2 lg:p-0">Home</Link>
                 <Link to="/about" className="hover:underline p-2 lg:p-0">About</Link>
@@ -117,7 +117,7 @@ const Services = () => {
               </div>
             </div>
           </main>
-          <h1 className='text-3xl text-white mt-[200px] ml-[20px] lg:ml-[100px]'>Services</h1>
+          <h1 className='text-3xl text-white mt-[200px] ml-[20px] lg:ml-[100px] font-bold'> Our Services</h1>
         </div>
       </div>
 

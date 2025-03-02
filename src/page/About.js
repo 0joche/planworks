@@ -119,7 +119,7 @@ const About = () => {
       {/* Header with Background Image */}
       <div
         className="h-[400px] relative bg-cover bg-center text-white"
-        style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 255, 0.7), rgba(0, 0, 139, 0.9)), url(${Site})` }}
+        style={{ backgroundImage: `linear-gradient(to bottom, rgba(114, 114, 223, 0.7), rgba(0, 0, 139, 0.9)), url(${Site})` }}
       >
         {/* Overlay for better readability */}
         <div className="absolute inset-0 bg-opacity-50"></div>
@@ -132,7 +132,7 @@ const About = () => {
                 alt="PlanWorks"
                 className="w-[50px] h-[50px] mt-10 mr-5 rounded-3xl"
               />
-              <span className="text-3xl text-white mt-7">Planworks</span>
+              <span className="text-3xl text-white mt-7 font-bold">Planworks Consulting</span>
             </li>
 
             {/* Hamburger Icon for Mobile */}
@@ -145,7 +145,7 @@ const About = () => {
 
             {/* Navigation Links */}
             <li
-              className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex bg-black ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}
+              className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'} flex-col  font-bold lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}
             >
               <Link to="/" className="hover:underline p-2 lg:p-0">Home</Link>
               <Link to="/about" className="hover:underline p-2 lg:p-0">About</Link>
@@ -206,7 +206,7 @@ const About = () => {
             </div>
           </div>
         </main>
-        <h1 className='text-3xl text-white mt-[200px] ml-[20px] lg:ml-[100px]'>About</h1>
+        <h1 className='text-3xl text-white mt-[200px] ml-[20px] lg:ml-[100px] font-bold'>About Us</h1>
       </div>
 
       {/* Content Sections */}

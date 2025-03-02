@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Site from '../images/pexels.jpg';
+import Site from '../images/work.jpg';
 import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
@@ -27,7 +27,7 @@ const Project = () => {
     <div className='text-white'>
       <div
         className="h-[400px] relative bg-cover bg-center text-white"
-        style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 255, 0.7), rgba(0, 0, 139, 0.9)), url(${Site})` }}
+        style={{ backgroundImage: `linear-gradient(to bottom, rgba(114, 114, 223, 0.7), rgba(0, 0, 139, 0.9)), url(${Site})` }}
       >
         <div className="absolute inset-0 bg-opacity-50"></div>
 
@@ -35,7 +35,7 @@ const Project = () => {
           <ul className="ml-5 lg:ml-20 flex items-center justify-between">
             <li className="flex items-center">
               <img src={Logo} alt="PlanWorks" className="w-[50px] h-[50px] mt-10 mr-5 rounded-3xl" />
-              <span className="text-3xl text-white mt-7">Planworks</span>
+              <span className="text-3xl text-white mt-7 font-bold">Planworks Consulting</span>
             </li>
 
             {/* Hamburger Icon */}
@@ -44,7 +44,7 @@ const Project = () => {
             </li>
 
             {/* Navigation Links */}
-            <li className={`mt-[45px] text-2xl flex gap-6 lg:flex ${isMenuOpen ? 'flex' : 'hidden'} flex-col lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
+            <li className={`mt-[45px] text-2xl flex gap-6 lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'} flex-col font-bold lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
               {['Home', 'About', 'Services', 'Our Team', 'Projects', 'Blog', 'CSR', 'Careers', 'Contact'].map((item, index) => (
                 <Link key={index} to={`/${item.toLowerCase().replace(' ', '')}`} className="hover:underline p-2 lg:p-0">{item}</Link>
               ))}
@@ -94,7 +94,7 @@ const Project = () => {
           )}
         </main>
 
-        <h1 className='text-3xl text-white mt-[200px] ml-[20px] lg:ml-[100px]'>Projects</h1>
+        <h1 className='text-3xl text-white mt-[200px] ml-[20px] lg:ml-[100px] font-bold'>Our Projects</h1>
         <p className='w-[400px] text-white ml-[20px] lg:ml-[100px]'>
           Here are some of our construction projects in Nigeria. Some are complete, while others are still under construction. Take a look!
         </p>
