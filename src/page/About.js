@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import Content from './components/Content';
 import Value from './components/Value';
-import Footer from './components/Footer';
 import Projects from './components/Projects';
 
 const About = () => {
@@ -146,7 +145,7 @@ const About = () => {
 
             {/* Navigation Links */}
             <li
-              className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'} flex-col  font-bold lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}
+              className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'} flex-col lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}
             >
               <Link to="/" className="hover:underline p-2 lg:p-0">Home</Link>
               <Link to="/about" className="hover:underline p-2 lg:p-0">About</Link>
