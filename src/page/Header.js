@@ -76,7 +76,7 @@ const Header = () => {
         <ul className='ml-20 flex flex-row items-center justify-between'>
           <li className='flex flex-row items-center'>
             <img src={Logo} alt='PlanWorks' className='w-[50px] h-[50px] mt-10 mr-5 rounded-3xl' />
-            <span className='text-3xl text-white mt-7 font-bold'>Planworks Consulting</span>
+            <span className='text-3xl text-white mt-7'>Planworks Consulting</span>
           </li>
 
           {/* Hamburger Icon */}
@@ -86,15 +86,15 @@ const Header = () => {
 
           {/* Navigation Links */}
           <li className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'}  font-bold flex-col lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
-            <Link to="/" className='hover:underline p-2 lg:p-0 font-bold'>Home</Link>
-            <Link to="/about" className='hover:underline p-2 lg:p-0 font-bold'>About Us</Link>
-            <Link to="/services" className='hover:underline p-2 lg:p-0 font-bold'> Our Services</Link>
-            <Link to="/team" className='hover:underline p-2 lg:p-0 font-bold'>Our Team</Link>
-            <Link to="/projects" className='hover:underline p-2 lg:p-0 font-bold'>Projects</Link>
-            <Link to="/blog" className='hover:underline p-2 lg:p-0 font-bold'>Blog</Link>
-            <Link to="/csr" className='hover:underline p-2 lg:p-0 font-bold'>CSR</Link>
-            <Link to="/careers" className='hover:underline p-2 lg:p-0 font-bold'>Careers</Link>
-            <Link to="/contact" className='hover:underline p-2 lg:p-0 font-bold'>Contact Us</Link>
+            <Link to="/" className='hover:underline p-2 lg:p-0 '>Home</Link>
+            <Link to="/about" className='hover:underline p-2 lg:p-0 '>About</Link>
+            <Link to="/services" className='hover:underline p-2 lg:p-0 '>Services</Link>
+            <Link to="/team" className='hover:underline p-2 lg:p-0 '>Team</Link>
+            <Link to="/projects" className='hover:underline p-2 lg:p-0 '>Projects</Link>
+            <Link to="/blog" className='hover:underline p-2 lg:p-0 '>Blog</Link>
+            <Link to="/csr" className='hover:underline p-2 lg:p-0 '>CSR</Link>
+            <Link to="/careers" className='hover:underline p-2 lg:p-0 '>Careers</Link>
+            <Link to="/contact" className='hover:underline p-2 lg:p-0 '>Contact</Link>
           </li>
 
           {/* Search Icon */}
