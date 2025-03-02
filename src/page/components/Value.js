@@ -9,11 +9,11 @@ const Value = () => {
   };
 
   const values = [
-    { title: 'Our Vision', content: 'To be the leading indigenous construction company in Nigeria.' },
-    { title: 'Our Mission', content: 'Delivering quality construction projects with integrity and excellence.' },
-    { title: 'Our People', content: 'We empower our team to achieve personal and professional growth.' },
-    { title: 'Quality Assurance', content: 'Ensuring the highest quality standards in all our projects.' },
-    { title: 'Health & Safety', content: 'Prioritizing safety and well-being in every project.' }
+    { title: 'Our Vision', content: 'To be the trusted partner in delivering transformative project outcomes across industries.' },
+    { title: 'Our Mission', content: 'Empower businesses with innovative project planning, monitoring, and management solutions for sustainable growth.' },
+    { title: 'Our Value', content: 'Integrity, excellence, collaboration, and customer-centric solutions driving project success.' },
+    { title: 'Quality Assurance', content: 'Upholding the highest quality standards across all our projects.' },
+    { title: 'Our Safety Culture', content: 'Prioritizing health, safety and well-being in all project.' }
   ];
 
   return (

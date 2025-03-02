@@ -1,30 +1,36 @@
 import React from 'react';
-import { HiOutlineCog8Tooth } from "react-icons/hi2";
-import { PiCylinderBold } from "react-icons/pi";
-import { IoMdKey } from "react-icons/io";
 import { GiMoebiusTriangle } from "react-icons/gi";
+import { MdManageAccounts, MdTrackChanges } from 'react-icons/md';
+import { LiaTelegramPlane } from "react-icons/lia";
+import { BiAnalyse } from "react-icons/bi";
+import { AiOutlineControl } from "react-icons/ai";
 
 const Cards = () => {
   const cardData = [
     {
-      icon: <HiOutlineCog8Tooth className='text-5xl mb-6' />,
-      title: "Civil Engineering",
-      description: "Design, construction, and maintenance of the physical and naturally built environment such as roads, bridges, airport hangars, sewerage systems, pipelines, etc."
+      icon: <LiaTelegramPlane className='text-5xl mb-6'/>,
+      title: "Project Planning & Scheduling",
+      description: "We develop comprehensive project schedules using Primavera P6 and MS Project, ensuring optimized workflows, realistic timelines, and effective resource allocation for procurement, construction, engineering, and infrastructure projects, minimizing delays and maximizing efficiency."
     },
     {
-      icon: <PiCylinderBold className='text-5xl mb-6' />,
-      title: "Building Construction",
-      description: "Addition of structure to real property, taking into account construction costs, expected lifetime of a project, government regulations as well as potential hazards."
+      icon: <MdTrackChanges className='text-5xl mb-6'/>,
+      title: "Project Tracking & Monitoring",
+      description: "We employ cutting-edge software and data analytics to track key performance indicators, monitor deliverables, and ensure that projects stay on course, minimizing deviations and maximizing efficiency throughout the project lifecycle."
     },
     {
-      icon: <IoMdKey className='text-5xl mb-6' />,
-      title: "Real Estate",
-      description: "Building real estate in rural and urban Nigeria including acreage, small town and country homes, recreational cabins, retirement property, waterfront properties etc."
+      icon: <BiAnalyse className='text-5xl mb-6' />,
+      title: "Delay Analysis & EOT Claims",
+      description: "We provide specialized delay analysis, forensic scheduling, and Extension of Time (EOT) claims to help clients mitigate contractual risks, resolve disputes, and ensure fair compensations for project disruptions."
     },
     {
-      icon: <GiMoebiusTriangle className='text-5xl mb-6' />,
-      title: "Facility Management",
-      description: "Management to ensure functionality, comfort, safety and efficiency of the built environment by integrating people, place, process and technology across the board."
+      icon: <AiOutlineControl className='text-5xl mb-6'/>,
+      title: "Project Controls & Reporting",
+      description: "Our data-driven project control solutions focus on cost management, earned value analysis (EVA), and performance reporting, providing actionable insights that drive informed decision-making for project stakeholders."
+    },
+    {
+      icon: <MdManageAccounts className='text-5xl mb-6' />,
+      title: "Risk & Resource Management",
+      description: "We offer comprehensive risk assessment and resource optimization strategies, ensuring efficient workforce allocation, proactive risk mitigation, and seamless execution of projects in high-risk environments like oil & gas and construction."
     }
   ];
 

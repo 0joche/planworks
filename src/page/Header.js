@@ -76,7 +76,7 @@ const Header = () => {
         <ul className='ml-20 flex flex-row items-center justify-between'>
           <li className='flex flex-row items-center'>
             <img src={Logo} alt='PlanWorks' className='w-[50px] h-[50px] mt-10 mr-5 rounded-3xl' />
-            <span className='text-3xl text-white mt-7 font-bold'>Planworks Consulting</span>
+            <span className='text-3xl text-white mt-7'>Planworks Consulting</span>
           </li>
 
           {/* Hamburger Icon */}
@@ -85,7 +85,7 @@ const Header = () => {
           </li>
 
           {/* Navigation Links */}
-          <li className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'}  font-bold flex-col lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
+          <li className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'}  flex-col lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
             <Link to="/" className='hover:underline p-2 lg:p-0'>Home</Link>
             <Link to="/about" className='hover:underline p-2 lg:p-0 '>About</Link>
             <Link to="/services" className='hover:underline p-2 lg:p-0 '> Our Services</Link>

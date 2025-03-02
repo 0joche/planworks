@@ -14,18 +14,18 @@ const Content = () => {
         </p>
 
         <p className='mt-10 text-xl md:text-2xl'>
-          We create and care for essential assets: hospitals, bridges, schools, roads, petrol stations, and other major structures. We work in partnership with sophisticated customers who value the highest levels of quality, safety, and technical expertise – applying our skills to meet their individual needs.
+        Planworks Consulting Services Limited is a leading project management and consulting firm dedicated to delivering excellence in the planning, execution, and monitoring of complex projects across construction, engineering, and infrastructure sectors. With a strong commitment to innovation and precision, we empower both public and private sector clients to achieve their project goals efficiently and effectively.
         </p>
       </div>
 
       {/* Second Card */}
       <div className='bg-white p-5 rounded-lg shadow-lg w-full md:w-[45%] lg:w-[40%] xl:w-[35%] mx-auto'>
         <p className='text-xl md:text-2xl'>
-          Our construction company has clear values, putting safety and the client first. It has a proven track record of effectively delivering diverse projects and services to a broad base of clients, such as the Government and Private Investors, with whom it works, handling projects either on a traditional contract basis or through full partnering agreements.
+        Our expertise spans across project planning & scheduling, delay analysis & EOT claims, project controls & reporting, risk and resource management, and regulatory compliance consulting. Leveraging cutting-edge tools and technologies such as Primavera P6, Microsoft Project, Artificial Intelligence and Power BI, we provide tailored solutions that ensure projects are delivered on time, within budget, and to the highest quality standards.
         </p>
 
         <p className='text-xl md:text-2xl mt-10'>
-          The PlanWorks brand is built on experience and a strong heritage, yet it constantly strives to improve its performance. Its employees are key to its success, so it ensures they benefit from strong leadership and continuous training and development. Consequently, our customers benefit from working with the very best people — in all ramifications.
+        Our mission is to redefine project management by combining technical expertise with a client-centric approach, fostering long-term partnerships built on trust, transparency, and exceptional results. At Planworks Consulting Services Limited, we don’t just manage projects, we deliver success..
         </p>
       </div>
     </div>

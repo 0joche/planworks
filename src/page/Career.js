@@ -38,7 +38,7 @@ const Career = () => {
           <ul className="ml-5 lg:ml-20 flex items-center justify-between">
             <li className="flex items-center">
               <img src={Logo} alt="PlanWorks" className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] mt-10 mr-5 rounded-3xl" />
-              <span className="text-xl lg:text-3xl text-white mt-7 font-bold">PlanWorks Consulting</span>
+              <span className="text-xl lg:text-3xl text-white mt-7 ">PlanWorks Consulting</span>
             </li>
 
             {/* Hamburger Icon */}
