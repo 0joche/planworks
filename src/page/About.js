@@ -6,6 +6,7 @@ import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import Content from './components/Content';
 import Value from './components/Value';
 import Footer from './components/Footer';
+import Projects from './components/Projects';
 
 const About = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -119,7 +120,7 @@ const About = () => {
       {/* Header with Background Image */}
       <div
         className="h-[400px] relative bg-cover bg-center text-white"
-        style={{ backgroundImage: `linear-gradient(to bottom, rgba(114, 114, 223, 0.7), rgba(0, 0, 139, 0.9)), url(${Site})` }}
+        style={{ backgroundImage: `linear-gradient(to bottom, rgba(141, 141, 231, 0.19), rgba(62, 62, 238, 0.6)), url(${Site})` }}
       >
         {/* Overlay for better readability */}
         <div className="absolute inset-0 bg-opacity-50"></div>
@@ -212,17 +213,7 @@ const About = () => {
       {/* Content Sections */}
       <Content />
       <Value />
-
-      {/* Call to Action Section */}
-      <div className='bg-white w-full h-[50px] text-black text-center mx-auto mt-10 mb-10'>
-        <h1 className='text-2xl text-black pt-20'>Let's build the future. Together</h1>
-        <button className='text-4xl mt-10 border-[5px] border-black p-5 hover:bg-orange-500 hover:text-white hover:border-gray-500'>
-          CONTACT US
-        </button>
-      </div>
-
-      {/* Footer */}
-      <Footer />
+      <Projects/>
     </div>
   );
 };

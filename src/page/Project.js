@@ -27,7 +27,7 @@ const Project = () => {
     <div className='text-white'>
       <div
         className="h-[400px] relative bg-cover bg-center text-white"
-        style={{ backgroundImage: `linear-gradient(to bottom, rgba(114, 114, 223, 0.7), rgba(0, 0, 139, 0.9)), url(${Site})` }}
+        style={{ backgroundImage: `linear-gradient(to bottom, rgba(141, 141, 231, 0.19), rgba(62, 62, 238, 0.6)), url(${Site})` }}
       >
         <div className="absolute inset-0 bg-opacity-50"></div>
 
@@ -35,7 +35,7 @@ const Project = () => {
           <ul className="ml-5 lg:ml-20 flex items-center justify-between">
             <li className="flex items-center">
               <img src={Logo} alt="PlanWorks" className="w-[50px] h-[50px] mt-10 mr-5 rounded-3xl" />
-              <span className="text-3xl text-white mt-7 font-bold">Planworks Consulting</span>
+              <span className="text-3xl text-white mt-7 ">Planworks Consulting</span>
             </li>
 
             {/* Hamburger Icon */}
@@ -95,8 +95,8 @@ const Project = () => {
         </main>
 
         <h1 className='text-3xl text-white mt-[200px] ml-[20px] lg:ml-[100px] font-bold'>Our Projects</h1>
-        <p className='w-[400px] text-white ml-[20px] lg:ml-[100px]'>
-          Here are some of our construction projects in Nigeria. Some are complete, while others are still under construction. Take a look!
+        <p className='w-[600px] text-white ml-[20px] lg:ml-[100px] '>
+        Here are some of the projects we have planned and managed across Nigeria. While some have been successfully completed, others are currently in progress. Explore our portfolio!
         </p>
       </div>
 

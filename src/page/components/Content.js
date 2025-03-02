@@ -6,11 +6,11 @@ const Content = () => {
       {/* First Card */}
       <div className='bg-white p-5 rounded-lg shadow-lg w-full md:w-[45%] lg:w-[40%] xl:w-[35%] mx-auto'>
         <h1 className='text-xl md:text-2xl font-bold'>
-          PlanWorks Company Limited was fully incorporated under the laws of the Federal Republic of Nigeria in the year 1989, with registration number RC 140577.
+          PlanWorks Consulting Services Limited was fully incorporated under the laws of the Federal Republic of Nigeria in the year 2025, with registration number RC 8232651.
         </h1>
 
         <p className='text-xl md:text-2xl mt-10'>
-          We pride ourselves as being among the list of top construction companies in Nigeria.
+          We pride ourselves as being among the list of top projecct management companies in Nigeria.
         </p>
 
         <p className='mt-10 text-xl md:text-2xl'>
@@ -25,7 +25,7 @@ const Content = () => {
         </p>
 
         <p className='text-xl md:text-2xl mt-10'>
-          The Dutum brand is built on experience and a strong heritage, yet it constantly strives to improve its performance. Its employees are key to its success, so it ensures they benefit from strong leadership and continuous training and development. Consequently, our customers benefit from working with the very best people — in all ramifications.
+          The PlanWorks brand is built on experience and a strong heritage, yet it constantly strives to improve its performance. Its employees are key to its success, so it ensures they benefit from strong leadership and continuous training and development. Consequently, our customers benefit from working with the very best people — in all ramifications.
         </p>
       </div>
     </div>

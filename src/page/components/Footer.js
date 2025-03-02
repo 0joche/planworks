@@ -5,10 +5,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear(); // Get the current year
 
   return (
-    <div className='flex flex-col md:flex-row justify-between items-center border-t-[5px] text-white mt-[300px] bg-orange-500 border-gray-500 py-10 px-5  md:px-20'>
+    <div className='flex flex-col md:flex-row justify-between items-center text-white mt-[100px] bg-orange-500 border-t-[5px] border-gray-500 py-10 px-5 md:px-20'>
       {/* Copyright Text */}
       <p className='text-lg mb-5 md:mb-0'>
-        &copy; {currentYear} PlanWorks Consulting Service Limited. All rights reserved.
+        &copy; {currentYear} PlanWorks Consulting. All rights reserved.
       </p>
 
       {/* Social Icons */}
@@ -22,7 +22,7 @@ const Footer = () => {
           <FaInstagram className='w-8 h-8' />
         </a>
         <a
-          href='https://www.facebook.com'
+          href='https://www.facebook.com/planworks'
           target='_blank'
           rel='noopener noreferrer'
           className='text-white hover:text-gray-300 transition-colors duration-300'
@@ -30,7 +30,7 @@ const Footer = () => {
           <FaFacebook className='w-8 h-8' />
         </a>
         <a
-          href='https://www.twitter.com'
+          href='https://x.com/ConsultPlanWork'
           target='_blank'
           rel='noopener noreferrer'
           className='text-white hover:text-gray-300 transition-colors duration-300'
@@ -46,7 +46,7 @@ const Footer = () => {
           <FaWhatsapp className='w-8 h-8' />
         </a>
         <a
-          href='https://www.whatsapp.com'
+          href='https://www.linkedin.com/company/planwcs'
           target='_blank'
           rel='noopener noreferrer'
           className='text-white hover:text-gray-300 transition-colors duration-300'

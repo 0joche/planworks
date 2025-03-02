@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Engineer from '../../images/engineer.jpg';
+import Engineer from '../../images/sites.jpg';
 
 const Value = () => {
   const [activeTab, setActiveTab] = useState(null);

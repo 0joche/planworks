@@ -3,7 +3,7 @@ import Civil from './../../images/civil.jpg';
 import Build from './../../images/planwork.jpg';
 import Sites from './../../images/sites.jpg';
 import Third from './../../images/third.jpg';
-import Estate  from '../../images/estate.jpg'
+import Estate  from '../../images/plan.jpg'
 
 const Service = () => {
   return (

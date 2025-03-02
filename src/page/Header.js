@@ -17,7 +17,7 @@ const images = [
   { src: siteImage, text: 'Providing data-driven solutions and strategic consulting to enhance efficiency, compliance, and cost control in your projects.' },
   { src: planImage, text: 'Empowering businesses with performance analytics, lean methodologies, and digital transformation strategies for sustainable growth.' },
   { src: enginesImage, text: 'Harnessing AI, automation, and cloud-based technologies to streamline project execution and maximize efficiency.' },
-  { src: plansImage, text: 'Providing data-driven solutions and strategic consulting to enhance efficiency, compliance, and cost control in your projects.' },
+  { src: plansImage, text: 'We support government agencies in delivering infrastructure projects on time and within budget, ensuring maximum public impact.' },
 ];
 
 const Header = () => {
@@ -55,7 +55,7 @@ const Header = () => {
             key={index}
             className={`absolute w-full h-full transition-opacity duration-1000 ${currentSlide === index ? 'opacity-100' : 'opacity-0'}`}
             style={{
-              backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 255, 0.6), rgba(0, 0, 139, 0.7)), url(${image.src})`,
+              backgroundImage: `linear-gradient(to bottom, rgba(141, 141, 231, 0.19), rgba(62, 62, 238, 0.6)), url(${image.src})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
@@ -87,14 +87,14 @@ const Header = () => {
           {/* Navigation Links */}
           <li className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'}  font-bold flex-col lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
             <Link to="/" className='hover:underline p-2 lg:p-0 font-bold'>Home</Link>
-            <Link to="/about" className='hover:underline p-2 lg:p-0 font-bold'>About</Link>
-            <Link to="/services" className='hover:underline p-2 lg:p-0 font-bold'>Services</Link>
+            <Link to="/about" className='hover:underline p-2 lg:p-0 font-bold'>About Us</Link>
+            <Link to="/services" className='hover:underline p-2 lg:p-0 font-bold'> Our Services</Link>
             <Link to="/team" className='hover:underline p-2 lg:p-0 font-bold'>Our Team</Link>
             <Link to="/projects" className='hover:underline p-2 lg:p-0 font-bold'>Projects</Link>
             <Link to="/blog" className='hover:underline p-2 lg:p-0 font-bold'>Blog</Link>
             <Link to="/csr" className='hover:underline p-2 lg:p-0 font-bold'>CSR</Link>
             <Link to="/careers" className='hover:underline p-2 lg:p-0 font-bold'>Careers</Link>
-            <Link to="/contact" className='hover:underline p-2 lg:p-0 font-bold'>Contact</Link>
+            <Link to="/contact" className='hover:underline p-2 lg:p-0 font-bold'>Contact Us</Link>
           </li>
 
           {/* Search Icon */}

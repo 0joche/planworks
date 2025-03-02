@@ -3,6 +3,7 @@ import Header from './Header';
 import Cards from './components/Cards';
 import Featured from './components/Featured';
 import Footer from './components/Footer';
+import Projects from './components/Projects';
 
 const Main = () => {
   return (
@@ -20,7 +21,7 @@ const Main = () => {
       </div>
       <Cards />
       <Featured />
-      <Footer/>
+      <Projects/>
     </>
   );
 };

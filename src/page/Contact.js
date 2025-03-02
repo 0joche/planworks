@@ -27,7 +27,7 @@ const Contact = () => {
     <div className='text-black'>
       <div
         className="h-[400px] relative bg-cover bg-center text-white"
-        style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 255, 0.7), rgba(0, 0, 139, 0.9)), url(${Site})` }}
+        style={{ backgroundImage: `linear-gradient(to bottom, rgba(141, 141, 231, 0.19), rgba(62, 62, 238, 0.6)), url(${Site})` }}
       >
         <div className="absolute inset-0 bg-opacity-50"></div>
 
@@ -98,7 +98,7 @@ const Contact = () => {
       </div>
 
       <div className='mt-10 p-5'>
-        <h1 className='text-2xl mb-5'>Contact Us</h1>
+        <h1 className='text-2xl mb-5 font-bold'>Contact Us</h1>
         <p className='mb-5'>We would love to hear from you. Reach out to us via any of the channels below, and our team will get back to you as soon as possible.</p>
         <ul className='list-disc list-inside mt-5'>
           <li>Email: info@planworks.com.ng</li>

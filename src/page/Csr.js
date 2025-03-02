@@ -27,7 +27,7 @@ const Csr = () => {
     <div className='text-black'>
       <div
         className="h-[400px] relative bg-cover bg-center text-white"
-        style={{ backgroundImage: `linear-gradient(to bottom, rgba(114, 114, 223, 0.7), rgba(0, 0, 139, 0.9)), url(${Site})` }}
+        style={{ backgroundImage: `linear-gradient(to bottom, rgba(141, 141, 231, 0.19), rgba(62, 62, 238, 0.6)), url(${Site})` }}
       >
         <div className="absolute inset-0 bg-opacity-50"></div>
 
@@ -94,19 +94,19 @@ const Csr = () => {
           )}
         </main>
 
-        <h1 className='text-3xl mt-[200px] ml-[20px] lg:ml-[100px]'>CSR</h1>
+        <h1 className='text-3xl mt-[200px] ml-[20px] lg:ml-[50px] font-bold'>Corporate Social Responsibility (CSR)</h1>
       </div>
 
       <div className='mt-10 p-5 text-black'>
-        <h1 className='text-2xl mb-5'>Our Responsibility</h1>
-        <p className='mb-5'>As part of the CSR of a construction company, we understand that our work and business decisions have an impact not only on our organization and stakeholders but also on the communities that support our daily lives and livelihoods.</p>
-        <p>As a result, we have endeavored to operate in ways that contribute to society and the environment, notably (but not exclusively) in the following areas:</p>
+        <h1 className='text-2xl mb-5 font-bold'>Our Responsibility</h1>
+        <p className='mb-5'>As a project planning, scheduling, and management firm, we recognize that our business decisions and operations extend beyond our organization and stakeholders — they impact the communities where we work and live.</p>
+        <p>Our commitment to corporate social responsibility is embedded in our approach to delivering projects that not only drive business outcomes but also contribute positively to society and the environment. We strive to integrate responsible practices across our operations, with a focus on:</p>
         <ul className='list-disc list-inside mt-5'>
-          <li>Community Development Projects</li>
-          <li>Environmental Sustainability</li>
-          <li>Education and Training Programs</li>
-          <li>Health and Safety Initiatives</li>
-          <li>Youth Empowerment</li>
+          <li>Community Development and Engagement Initiatives</li>
+          <li>Capacity Building via Education and Training Programs</li>
+          <li>Environmental Sustainability through Efficient Project Planning</li>
+          <li>Youth Empowerment through Skills Development and Mentorship</li>
+          <li>Promoting Health, Safety, and Well-being Standards</li>
         </ul>
       </div>
 

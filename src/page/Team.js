@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Site from '../images/site.jpg';
+import Site from '../images/work.jpg';
 import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
@@ -96,7 +96,7 @@ const Team = () => {
 
         <h1 className='text-3xl text-white mt-[200px] ml-[20px] lg:ml-[100px] font-bold'>Our Team</h1>
         <p className='w-[400px] text-white ml-[20px] lg:ml-[100px]'>
-          The Dutum team is made up of professionals of different fields, for the efficient delivery of our projects.
+          The PlanWorks team is made up of professionals of different fields, for the efficient delivery of our projects.
         </p>
       </div>
 

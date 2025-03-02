@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import Site from '../images/data.jpg';
+import Site from '../images/man.jpg';
 import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { useSearch } from '../page/components/SearchContext'; // Import the useSearch hook
+import Projects from './components/Projects';
 
 const Blog = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ const Blog = () => {
     <div className='text-white'>
       <div
         className="h-[400px] relative bg-cover bg-center text-white"
-        style={{ backgroundImage: `linear-gradient(to bottom, rgba(114, 114, 223, 0.7), rgba(0, 0, 139, 0.9)), url(${Site})` }}
+        style={{ backgroundImage: `linear-gradient(to bottom, rgba(141, 141, 231, 0.19), rgba(62, 62, 238, 0.6)), url(${Site})` }}
       >
         <div className="absolute inset-0 bg-opacity-50"></div>
 
@@ -94,10 +95,11 @@ const Blog = () => {
         </main>
 
         <h1 className='text-3xl mt-[200px] ml-[20px] lg:ml-[100px] font-bold'>Blog</h1>
-        <p className='w-[400px] text-white ml-[20px] lg:ml-[100px]'>
-          In our construction blog, you will learn more about the construction industry in Nigeria and how our zeal and passion earned us a spot among the top construction companies in Nigeria.
+        <p className='w-[600px] text-white ml-[30px] lg:ml-[100px]'>
+          In our expert project project controls blog, you will learn more about the project management industry across the globe and how our zeal and passion earned us a spot among the top project management companies in Nigeria.
         </p>
       </div>
+      <Projects/>
     </div>
   );
 };
