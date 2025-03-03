@@ -1,5 +1,4 @@
 import React from 'react';
-import { GiMoebiusTriangle } from "react-icons/gi";
 import { MdManageAccounts, MdTrackChanges } from 'react-icons/md';
 import { LiaTelegramPlane } from "react-icons/lia";
 import { BiAnalyse } from "react-icons/bi";
