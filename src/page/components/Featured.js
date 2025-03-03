@@ -4,6 +4,9 @@ import projectImage1 from '../../images/more/hoe.jpeg';
 import projectImage2 from '../../images/more/house.jpeg';
 import projectImage3 from '../../images/more/hot.jpeg';
 import projectImage4 from '../../images/more/home.jpeg';
+import projectImage5 from '../../images/pipe.jpeg';
+import projectImage6 from '../../images/planw.jpeg';
+import projectImage7 from '../../images/worker.jpeg';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -12,10 +15,24 @@ const Featured = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3, // Show 3 slides at a time
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2, // Show 2 slides on smaller screens
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1, // Show 1 slide on mobile screens
+        },
+      },
+    ],
   };
 
   return (
@@ -59,7 +76,41 @@ const Featured = () => {
           </div>
         </div>
       </Slider>
-      <h1 className='text-3xl text-black text-center mt-10'>Project Title: KADUNA REFINERY QUICK FIX PROJECT, PROPOSED STAFF CAMP</h1>
+      <h1 className='text-3xl text-black text-center mt-10'>
+        Project Title: KADUNA REFINERY QUICK FIX PROJECT, PROPOSED STAFF CAMP
+      </h1>
+      <Slider {...settings} className='mt-10'>
+        <div className='p-2'>
+          <div className='overflow-hidden rounded-lg shadow-lg'>
+            <img
+              src={projectImage5}
+              alt='Project 5'
+              className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
+            />
+          </div>
+        </div>
+        <div className='p-2'>
+          <div className='overflow-hidden rounded-lg shadow-lg'>
+            <img
+              src={projectImage6}
+              alt='Project 6'
+              className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
+            />
+          </div>
+        </div>
+        <div className='p-2'>
+          <div className='overflow-hidden rounded-lg shadow-lg'>
+            <img
+              src={projectImage7}
+              alt='Project 7'
+              className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
+            />
+          </div>
+        </div>
+      </Slider>
+      <h1 className='text-3xl text-black text-center mt-10'>
+        Project Title: Planning and Monitor Kaduna Refinery Quick Fix Project
+      </h1>
     </div>
   );
 };
