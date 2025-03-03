@@ -1,8 +1,8 @@
 import React from 'react';
 import Civil from './../../images/civil.jpg';
 import Build from './../../images/planwork.jpg';
-import Sites from './../../images/sites.jpg';
-import Third from './../../images/third.jpg';
+import Sites from './../../images/control.jpg';
+import Third from './../../images/delay.jpg';
 import Estate  from '../../images/plan.jpg'
 
 const Service = () => {

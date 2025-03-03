@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Site from '../images/work.jpg';
+import Site from '../images/teams.jpeg';
 import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
