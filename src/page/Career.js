@@ -54,7 +54,7 @@ const Career = () => {
                 isMenuOpen ? 'flex bg-black' : 'hidden'
               } flex-col  lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}
             >
-              {['Home', 'About', 'Services', 'Our Team', 'Projects', 'Blog', 'CSR', 'Careers', 'Contact'].map((item, index) => (
+              {['Home', 'About', 'Services', 'Team', 'Projects', 'Blog', 'CSR', 'Careers', 'Contact'].map((item, index) => (
                 <Link
                   key={index}
                   to={`/${item.toLowerCase().replace(' ', '')}`}
