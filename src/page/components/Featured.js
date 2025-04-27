@@ -9,6 +9,7 @@ import projectImage6 from '../../images/planw.jpeg';
 import projectImage7 from '../../images/worker.jpeg';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Link } from 'react-router-dom';
 
 const Featured = () => {
   const settings = {
@@ -37,79 +38,93 @@ const Featured = () => {
 
   return (
     <div className='text-black border-t border-black'>
-      <h1 className='text-3xl font-bold pt-20 ml-10'>Featured Projects</h1>
+      <h1 className='text-3xl font-bold pt-20 ml-10'>Our Projects</h1>
       <Slider {...settings} className='mt-10'>
         <div className='p-2'>
-          <div className='overflow-hidden rounded-lg shadow-lg'>
-            <img
-              src={projectImage1}
-              alt='Project 1'
-              className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
-            />
-          </div>
+          <Link to='/projects'>
+            <div className='overflow-hidden rounded-lg shadow-lg'>
+              <img
+                src={projectImage1}
+                alt='Project 1'
+                className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
+              />
+            </div>
+          </Link>
         </div>
         <div className='p-2'>
-          <div className='overflow-hidden rounded-lg shadow-lg'>
-            <img
-              src={projectImage2}
-              alt='Project 2'
-              className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
-            />
-          </div>
+          <Link to='/projects'>
+            <div className='overflow-hidden rounded-lg shadow-lg'>
+              <img
+                src={projectImage2}
+                alt='Project 2'
+                className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
+              />
+            </div>
+          </Link>
         </div>
         <div className='p-2'>
-          <div className='overflow-hidden rounded-lg shadow-lg'>
-            <img
-              src={projectImage3}
-              alt='Project 3'
-              className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
-            />
-          </div>
+          <Link to='/projects'>
+            <div className='overflow-hidden rounded-lg shadow-lg'>
+              <img
+                src={projectImage3}
+                alt='Project 3'
+                className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
+              />
+            </div>
+          </Link>
         </div>
         <div className='p-2'>
-          <div className='overflow-hidden rounded-lg shadow-lg'>
-            <img
-              src={projectImage4}
-              alt='Project 4'
-              className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
-            />
-          </div>
+          <Link to='/projects'>
+            <div className='overflow-hidden rounded-lg shadow-lg'>
+              <img
+                src={projectImage4}
+                alt='Project 4'
+                className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
+              />
+            </div>
+          </Link>
         </div>
       </Slider>
       <h1 className='text-3xl text-black text-center mt-10'>
-        Project Title: KADUNA REFINERY QUICK FIX PROJECT, PROPOSED STAFF CAMP
+        Proposed Staff Camp for a Refinery Project
       </h1>
       <Slider {...settings} className='mt-10'>
         <div className='p-2'>
-          <div className='overflow-hidden rounded-lg shadow-lg'>
-            <img
-              src={projectImage5}
-              alt='Project 5'
-              className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
-            />
-          </div>
+          <Link to='/projects'>
+            <div className='overflow-hidden rounded-lg shadow-lg'>
+              <img
+                src={projectImage5}
+                alt='Project 5'
+                className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
+              />
+            </div>
+          </Link>
         </div>
         <div className='p-2'>
-          <div className='overflow-hidden rounded-lg shadow-lg'>
-            <img
-              src={projectImage6}
-              alt='Project 6'
-              className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
-            />
-          </div>
+          <Link to='/projects'>
+            <div className='overflow-hidden rounded-lg shadow-lg'>
+              <img
+                src={projectImage6}
+                alt='Project 6'
+                className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
+              />
+            </div>
+          </Link>
         </div>
         <div className='p-2'>
-          <div className='overflow-hidden rounded-lg shadow-lg'>
-            <img
-              src={projectImage7}
-              alt='Project 7'
-              className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
-            />
-          </div>
+          <Link to='/projects'>
+            <div className='overflow-hidden rounded-lg shadow-lg'>
+              <img
+                src={projectImage7}
+                alt='Project 7'
+                className='w-full h-auto transform transition-transform duration-500 hover:scale-110'
+              />
+            </div>
+          </Link>
         </div>
       </Slider>
       <h1 className='text-3xl text-black text-center mt-10'>
-        Project Title: Planning and Monitor Kaduna Refinery Quick Fix Project
+        Planned & Monitored a Refinery Quick Fix Project
       </h1>
     </div>
   );

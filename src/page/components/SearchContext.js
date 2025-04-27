@@ -29,7 +29,7 @@ export const SearchProvider = ({ children }) => {
     },
     {
       id: 4,
-      title: 'Our Team',
+      title: 'Team',
       link: '/team',
       description: 'Meet our team of experts dedicated to delivering excellence in every project.',
     },
