@@ -114,10 +114,10 @@ const Team = () => {
             We are planners, engineers, analysts, and strategists united by a shared commitment to precision, innovation, and results.
           </p>
           <p className='mb-5 text-xl leading-relaxed text-black'>
-            Each member of our team is handpicked not just for technical expertise, but for a proactive mindset and a passion for helping clients meet critical project milestones—on time and within budget.
+            Each member of our team is handpicked not just for technical expertise, but for a proactive mindset and a passion for helping clients meet critical project milestones on time and within budget.
           </p>
           <p className='mb-5 text-xl leading-relaxed text-black'>
-            At PlanWorks, we don't just manage projects—we build trust, foster collaboration, and deliver success.
+            At PlanWorks, we don't just manage projects, we build trust, foster collaboration, and deliver success.
           </p>
         </div>
       </div>
