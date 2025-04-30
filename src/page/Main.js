@@ -13,7 +13,7 @@ const Main = () => {
           <div>
             <h1 className='text-center text-3xl'>Our Services </h1>
             <p className='w-full md:w-[550px] text-center mx-auto mt-10 px-4 md:px-0'>
-            PlanWorks is a leading Project Planning, Scheduling, Monitoring, and Management firm with a reputation for delivering technical excellence built on over 4 years of experience. Based in Abuja, we provide innovative project management solutions across all Nigerian states and Africa, ensuring seamless project execution from inception to completion.
+            PlanWorks is a leading Project Planning, Scheduling, Monitoring, and Management firm with a reputation for delivering technical excellence built on years of experience. Based in Abuja, we provide innovative project management solutions across all Nigerian states and Africa, ensuring seamless project execution from inception to completion.
             </p>
           </div>
         </div>
