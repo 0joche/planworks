@@ -100,6 +100,15 @@ const Team = () => {
         <p className='w-[400px] text-white ml-[20px] lg:ml-[100px]'>
           The PlanWorks team is made up of professionals of different fields, for the efficient delivery of our projects.
         </p>
+            
+      </div>
+         <div className='mt-10 p-5 text-black'>
+            <p className='mb-5'>At PlanWorks Consulting Services Ltd, our team is the driving force behind every successful project we deliver.</li> 
+            <p className='mb-5'>Comprising seasoned professionals with diverse backgrounds in Oil & Gas, Construction, Real Estate, and Government infrastructure, our experts bring years of combined experience in project planning, scheduling, monitoring, and control.</li> 
+            <p className='mb-5'>We are planners, engineers, analysts, and strategists united by a shared commitment to precision, innovation, and results.</li>
+            <p className='mb-5'>Each member of our team is handpicked not just for technical expertise, but for a proactive mindset and a passion for helping clients meet critical project milestones—on time and within budget.</li>
+            <p className='mb-5'>At PlanWorks, we don’t just manage projects—we build trust, foster collaboration, and deliver success.</p>
+           </ul>
       </div>
 
       <Projects />
