@@ -98,26 +98,28 @@ const Team = () => {
 
         <h1 className='text-3xl text-white mt-[200px] ml-[20px] lg:ml-[100px] font-bold'>Our Team</h1>
         <p className='w-[400px] text-white ml-[20px] lg:ml-[100px]'>
-          The PlanWorks team is made up of professionals of different fields, for the efficient delivery of our projects.
+          The PlanWorks team comprises seasoned professionals from diverse disciplines, united by a shared commitment to delivering projects with precision, efficiency, and excellence.
         </p>
       </div>
       
-      <div className='mt-10 p-5 text-black'>
-        <p className='mb-5 text-xl leading-relaxed'>
-          At PlanWorks Consulting Services Ltd, our team is the driving force behind every successful project we deliver.
-        </p>
-        <p className='mb-5 text-xl leading-relaxed'>
-          Comprising seasoned professionals with diverse backgrounds in Oil & Gas, Construction, Real Estate, and Government infrastructure, our experts bring years of combined experience in project planning, scheduling, monitoring, and control.
-        </p>
-        <p className='mb-5 text-xl leading-relaxed'>
-          We are planners, engineers, analysts, and strategists united by a shared commitment to precision, innovation, and results.
-        </p>
-        <p className='mb-5 text-xl leading-relaxed'>
-          Each member of our team is handpicked not just for technical expertise, but for a proactive mindset and a passion for helping clients meet critical project milestones—on time and within budget.
-        </p>
-        <p className='mb-5 text-xl leading-relaxed'>
-          At PlanWorks, we don't just manage projects—we build trust, foster collaboration, and deliver success.
-        </p>
+      <div className='mt-10 p-5'>
+        <div className='bg-white rounded-lg border border-gray-100 shadow-md p-8'>
+          <p className='mb-5 text-xl leading-relaxed text-black'>
+            At PlanWorks Consulting Services Ltd, our team is the driving force behind every successful project we deliver.
+          </p>
+          <p className='mb-5 text-xl leading-relaxed text-black'>
+            Comprising seasoned professionals with diverse backgrounds in Oil & Gas, Construction, Real Estate, and Government infrastructure, our experts bring years of combined experience in project planning, scheduling, monitoring, and control.
+          </p>
+          <p className='mb-5 text-xl leading-relaxed text-black'>
+            We are planners, engineers, analysts, and strategists united by a shared commitment to precision, innovation, and results.
+          </p>
+          <p className='mb-5 text-xl leading-relaxed text-black'>
+            Each member of our team is handpicked not just for technical expertise, but for a proactive mindset and a passion for helping clients meet critical project milestones—on time and within budget.
+          </p>
+          <p className='mb-5 text-xl leading-relaxed text-black'>
+            At PlanWorks, we don't just manage projects—we build trust, foster collaboration, and deliver success.
+          </p>
+        </div>
       </div>
 
       <Projects />
