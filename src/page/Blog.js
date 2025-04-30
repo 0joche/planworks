@@ -98,7 +98,7 @@ const Blog = () => {
 
         <h1 className='text-3xl mt-[200px] ml-[20px] lg:ml-[100px] font-bold'>Blog</h1>
         <p className='w-[600px] text-white ml-[30px] lg:ml-[100px]'>
-          In our expert project project controls blog, you will learn more about the project management industry across the globe and how our zeal and passion earned us a spot among the top project management companies in Nigeria.
+          In our expert project controls blog, you will learn more about the project management industry across the globe and how our zeal and passion earned us a spot among the top project management companies in Nigeria.
         </p>
       </div>
       <Projects/>
