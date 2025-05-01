@@ -97,7 +97,7 @@ const Team = () => {
         </main>
 
         <h1 className='text-3xl text-white mt-[200px] ml-[20px] lg:ml-[100px] font-bold'>Our Team</h1>
-        <p className='w-[600px] text-white ml-[20px] lg:ml-[100px]'>
+        <p className='w-[700px] text-white ml-[20px] lg:ml-[100px]'>
           The PlanWorks team comprises seasoned professionals from diverse disciplines, united by a shared commitment to delivering projects with precision, efficiency, and excellence.
         </p>
       </div>
