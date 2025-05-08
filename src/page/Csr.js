@@ -3,7 +3,7 @@ import Site from '../images/colab.jpg';
 import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import { useSearch } from '../page/components/SearchContext'; // Import the useSearch hook
+import { useSearch } from '../page/components/SearchContext';
 import Projects from './components/Projects';
 
 const Csr = () => {
@@ -34,10 +34,10 @@ const Csr = () => {
         <main className="relative z-10">
           <ul className="ml-5 lg:ml-20 flex items-center justify-between">
             <li className="flex items-center">
-            <Link to="/" className='flex flex-row'>
+              <Link to="/" className='flex flex-row'>
                 <img src={Logo} alt='PlanWorks' className='w-[50px] h-[50px] mt-10 mr-5 rounded-3xl' />
                 <span className='text-3xl text-white mt-10'>PlanWorks Consulting</span>
-            </Link>
+              </Link>
             </li>
 
             {/* Hamburger Icon */}
@@ -46,7 +46,7 @@ const Csr = () => {
             </li>
 
             {/* Navigation Links */}
-            <li className={`mt-[45px] text-2xl flex gap-6 lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'} flex-col  lg:flex-row absolute lg:static  top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
+            <li className={`mt-[45px] text-2xl flex gap-6 lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'} flex-col lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}>
               {['Home', 'About', 'Services', 'Team', 'Projects', 'Blog', 'CSR', 'Careers', 'Contact'].map((item, index) => (
                 <Link key={index} to={`/${item.toLowerCase().replace(' ', '')}`} className="hover:underline p-2 lg:p-0">{item}</Link>
               ))}
@@ -99,17 +99,22 @@ const Csr = () => {
         <h1 className='text-3xl mt-[200px] ml-[20px] lg:ml-[50px] font-bold'>Corporate Social Responsibility (CSR)</h1>
       </div>
 
-      <div className='mt-10 p-5 text-black'>
-        <h1 className='text-2xl mb-5 font-bold'>Our Responsibility</h1>
-        <p className='mb-5'>As a project planning, scheduling, and management firm, we recognize that our business decisions and operations extend beyond our organization and stakeholders — they impact the communities where we work and live.</p>
-        <p>Our commitment to corporate social responsibility is embedded in our approach to delivering projects that not only drive business outcomes but also contribute positively to society and the environment. We strive to integrate responsible practices across our operations, with a focus on:</p>
-        <ul className='list-disc list-inside mt-5'>
-          <li>Community Development and Engagement Initiatives</li>
-          <li>Capacity Building via Education and Training Programs</li>
-          <li>Environmental Sustainability through Efficient Project Planning</li>
-          <li>Youth Empowerment through Skills Development and Mentorship</li>
-          <li>Promoting Health, Safety, and Well-being Standards</li>
-        </ul>
+      {/* CSR Content Container */}
+      <div className="max-w-6xl mx-auto px-5 py-10">
+        <div className="border border-gray-200 rounded-lg shadow-sm p-8 bg-white">
+          <h1 className='text-2xl mb-5 font-bold'>Our Responsibility</h1>
+          <div className="space-y-5">
+            <p>As a project planning, scheduling, and management firm, we recognize that our business decisions and operations extend beyond our organization and stakeholders — they impact the communities where we work and live.</p>
+            <p>Our commitment to corporate social responsibility is embedded in our approach to delivering projects that not only drive business outcomes but also contribute positively to society and the environment. We strive to integrate responsible practices across our operations, with a focus on:</p>
+            <ul className='list-disc list-inside mt-5 space-y-2'>
+              <li>Community Development and Engagement Initiatives</li>
+              <li>Capacity Building via Education and Training Programs</li>
+              <li>Environmental Sustainability through Efficient Project Planning</li>
+              <li>Youth Empowerment through Skills Development and Mentorship</li>
+              <li>Promoting Health, Safety, and Well-being Standards</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <Projects />
