@@ -13,7 +13,7 @@ const Service = () => {
         <div className='w-full md:w-[50%] lg:w-[40%]'>
           <h1 className='text-2xl md:text-3xl font-bold mb-5'>Project Planning & Scheduling</h1>
           <p className='text-lg md:text-xl'>
-          We specialize in delivering comprehensive project planning and scheduling services, ensuring that every phase of your procurement, construction, engineering, or infrastructure project is professioanlly organized. Our expert team utilizes advanced tools and methodologies to create realistic timelines, optimize resource allocation, and align project milestones with your strategic goals, ensuring timely and efficient project delivery.
+          We specialize in delivering comprehensive project planning and scheduling services, ensuring that every phase of your engineering, procurement, and construction, or infrastructure project is professioanlly organized, monitored, and controlled. Our expert team utilizes advanced tools and methodologies to create realistic timelines, effective monitoring, optimize resource allocation, and align project milestones with your strategic goals, ensuring timely and efficient project delivery.
           </p>
         </div>
 
@@ -75,7 +75,6 @@ Our project controls and reporting services ensure transparency and accountabili
           <p className='text-lg md:text-xl'>
           We offer expert delay analysis and Extension of Time (EOT) claims services to help clients navigate project delays effectively. Our team identifies the root causes of delays, assesses their impact, and prepares robust claims to ensure fair compensation and project recovery, keeping your project on track and within contractual obligations.
 
-Learn more about our EOT Claims
           </p>
         </div>
       </div>
