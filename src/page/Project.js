@@ -3,7 +3,7 @@ import Site from '../images/work.jpg';
 import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import { useSearch } from '../page/components/SearchContext'; // Import the useSearch hook
+import { useSearch } from '../page/components/SearchContext';
 import Projects from './components/Projects';
 
 const Project = () => {
@@ -34,10 +34,10 @@ const Project = () => {
         <main className="relative z-10">
           <ul className="ml-5 lg:ml-20 flex items-center justify-between">
             <li className="flex items-center">
-            <Link to="/" className='flex flex-row'>
+              <Link to="/" className='flex flex-row'>
                 <img src={Logo} alt='PlanWorks' className='w-[50px] h-[50px] mt-10 mr-5 rounded-3xl' />
                 <span className='text-3xl text-white mt-10'>PlanWorks Consulting </span>
-            </Link>
+              </Link>
             </li>
 
             {/* Hamburger Icon */}
@@ -98,8 +98,48 @@ const Project = () => {
 
         <h1 className='text-3xl text-white mt-[200px] ml-[20px] lg:ml-[100px] font-bold'>Our Projects</h1>
         <p className='w-[600px] text-white ml-[20px] lg:ml-[100px] '>
-        Here are some of the projects we have planned and managed across Nigeria. While some have been successfully completed, others are currently in progress. Explore our portfolio!
+          Here are some of the projects we have planned and managed across Nigeria. While some have been successfully completed, others are currently in progress. Explore our portfolio!
         </p>
+      </div>
+
+      {/* Projects Container */}
+      <div className="max-w-6xl mx-auto px-5 py-10">
+        {/* Projects Wrapper with Styling */}
+        <div className="border border-gray-200 rounded-lg shadow-sm p-6 bg-white">
+          {/* Staff Accommodation Camp Development */}
+          <div className="mb-20 p-8 border border-gray-100 rounded-lg shadow-md bg-gray-50">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">🏗️</span>
+              <h2 className="text-2xl font-bold">Staff Accommodation Camp Development – Refinery Project</h2>
+            </div>
+            <div className="ml-12">
+              <p className="font-semibold mb-2">Client: <span className="font-normal">Confidential</span></p>
+              <p className="font-semibold mb-2">Scope: <span className="font-normal">Planning & Infrastructure Support</span></p>
+              <p className="mt-4">
+                PlanWorks provided comprehensive project planning, layout optimization, and progress monitoring 
+                for the development of a fully serviced staff accommodation camp to support refinery operations. 
+                The project included housing, utilities, access roads, and compliance with HSE standards.
+              </p>
+            </div>
+          </div>
+
+          {/* Refinery Quick-Fix Rehabilitation Project */}
+          <div className="mb-20 p-8 border border-gray-100 rounded-lg shadow-md bg-gray-50">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">⚙️</span>
+              <h2 className="text-2xl font-bold">Refinery Quick-Fix Rehabilitation Project</h2>
+            </div>
+            <div className="ml-12">
+              <p className="font-semibold mb-2">Client: <span className="font-normal">Confidential</span></p>
+              <p className="font-semibold mb-2">Scope: <span className="font-normal">Planning, Monitoring & Reporting</span></p>
+              <p className="mt-4">
+                PlanWorks was engaged to plan, track, and report on the fast-tracked rehabilitation of critical 
+                refinery units. Our team implemented dynamic scheduling, resource leveling, and progress analysis 
+                to ensure timely execution and visibility for stakeholders under a compressed timeline.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <Projects />
