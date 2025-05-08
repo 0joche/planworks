@@ -16,7 +16,7 @@ const images = [
   { src: engineImage, text: 'Expert Time Impact Analysis (TIA) and forensic delay analysis to safeguard your project’s timeline and profitability.' },
   { src: siteImage, text: 'Providing data-driven solutions and strategic consulting to enhance efficiency, compliance, and cost control in your projects.' },
   { src: planImage, text: 'Empowering businesses with performance analytics, lean methodologies, and digital transformation strategies for sustainable growth.' },
-  { src: enginesImage, text: 'Harnessing AI, automation, and cloud-based technologies to streamline project execution and maximize efficiency.' },
+  { src: enginesImage, text: 'Harnessing AI / ML, automation, and cloud-based technologies to streamline project execution and maximize efficiency.' },
   { src: plansImage, text: 'We support government agencies in delivering infrastructure projects on time and within budget, ensuring maximum public impact.' },
 ];
 
