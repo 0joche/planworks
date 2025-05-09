@@ -3,7 +3,7 @@ import Site from '../images/man.jpg';
 import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import { useSearch } from '../page/components/SearchContext';
+import { useSearch } from '../page/components/SearchContext'; // Import the useSearch hook
 import Projects from './components/Projects';
 
 const Blog = () => {
