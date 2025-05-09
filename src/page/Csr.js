@@ -4,7 +4,7 @@ import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { useSearch } from '../page/components/SearchContext';
-import Footer from './components/Footer';
+import Projects from './components/Projects';
 
 const Csr = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -117,7 +117,8 @@ const Csr = () => {
         </div>
       </div>
 
-      <Footer />
+      {/* Fix: Properly render the Projects component */}
+      <Projects />
     </div>
   );
 };
