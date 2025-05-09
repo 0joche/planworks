@@ -9,131 +9,74 @@ import Projects from './components/Projects';
 
 const About = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage hamburger menu visibility
-  const [searchQuery, setSearchQuery] = useState(''); // State to store the search query
-  const [searchResults, setSearchResults] = useState([]); // State to store search results
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
 
-  // Dummy data for search (replace with your actual data)
   const dummyData = [
-    {
-      id: 1,
-      title: 'Home',
-      link: '/',
-      description: 'Welcome to PlanWorks, your partner in construction and project management.',
-    },
-    {
-      id: 2,
-      title: 'About',
-      link: '/about',
-      description: 'Learn more about our mission, vision, and values at PlanWorks.',
-    },
-    {
-      id: 3,
-      title: 'Services',
-      link: '/services',
-      description: 'We offer end-to-end services including project planning, scheduling, and resource management.',
-    },
-    {
-      id: 4,
-      title: 'Team',
-      link: '/team',
-      description: 'Meet our team of experts dedicated to delivering excellence in every project.',
-    },
-    {
-      id: 5,
-      title: 'Projects',
-      link: '/projects',
-      description: 'Explore our portfolio of successful projects in construction and oil & gas industries.',
-    },
-    {
-      id: 6,
-      title: 'Blog',
-      link: '/blog',
-      description: 'Stay updated with the latest trends and insights in the construction industry.',
-    },
-    {
-      id: 7,
-      title: 'CSR',
-      link: '/csr',
-      description: 'Our commitment to corporate social responsibility and community development.',
-    },
-    {
-      id: 8,
-      title: 'Careers',
-      link: '/careers',
-      description: 'Join our team and build a rewarding career with PlanWorks.',
-    },
-    {
-      id: 9,
-      title: 'Contact',
-      link: '/contact',
-      description: 'Get in touch with us for inquiries, partnerships, or support.',
-    },
+    { id: 1, title: 'Home', link: '/', description: 'Welcome to PlanWorks, your partner in construction and project management.' },
+    { id: 2, title: 'About', link: '/about', description: 'Learn more about our mission, vision, and values at PlanWorks.' },
+    { id: 3, title: 'Services', link: '/services', description: 'We offer end-to-end services including project planning, scheduling, and resource management.' },
+    { id: 4, title: 'Team', link: '/team', description: 'Meet our team of experts dedicated to delivering excellence in every project.' },
+    { id: 5, title: 'Projects', link: '/projects', description: 'Explore our portfolio of successful projects in construction and oil & gas industries.' },
+    { id: 6, title: 'Blog', link: '/blog', description: 'Stay updated with the latest trends and insights in the construction industry.' },
+    { id: 7, title: 'CSR', link: '/csr', description: 'Our commitment to corporate social responsibility and community development.' },
+    { id: 8, title: 'Careers', link: '/careers', description: 'Join our team and build a rewarding career with PlanWorks.' },
+    { id: 9, title: 'Contact', link: '/contact', description: 'Get in touch with us for inquiries, partnerships, or support.' },
   ];
 
   const togglePopup = () => {
-    setIsPopupVisible(!isPopupVisible); // Toggle popup visibility
-    setSearchQuery(''); // Clear search query when popup is closed
-    setSearchResults([]); // Clear search results when popup is closed
+    setIsPopupVisible(!isPopupVisible);
+    setSearchQuery('');
+    setSearchResults([]);
   };
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle hamburger menu visibility
+    setIsMenuOpen(!isMenuOpen);
   };
 
   const handleSearchInputChange = (e) => {
     const query = e.target.value;
     setSearchQuery(query);
 
-    // Perform search
     if (query.trim() === '') {
-      setSearchResults([]); // Clear results if query is empty
+      setSearchResults([]);
     } else {
-      const results = dummyData.filter((item) => {
-        // Search in both title and description
-        return (
-          item.title.toLowerCase().includes(query.toLowerCase()) ||
-          item.description.toLowerCase().includes(query.toLowerCase())
-        );
-      });
-      setSearchResults(results); // Update search results
+      const results = dummyData.filter(item =>
+        item.title.toLowerCase().includes(query.toLowerCase()) ||
+        item.description.toLowerCase().includes(query.toLowerCase())
+      );
+      setSearchResults(results);
     }
   };
 
-  // Function to highlight matched words in the search results
   const highlightText = (text, query) => {
     if (!query) return text;
-
     const regex = new RegExp(`(${query})`, 'gi');
     return text.split(regex).map((part, index) =>
-      part.toLowerCase() === query.toLowerCase() ? (
-        <span key={index} className="bg-yellow-200">{part}</span>
-      ) : (
-        part
-      )
+      part.toLowerCase() === query.toLowerCase()
+        ? <span key={index} className="bg-yellow-200">{part}</span>
+        : part
     );
   };
 
   return (
     <div className='text-white'>
-      {/* Header with Background Image */}
       <div
         className="h-[400px] relative bg-cover bg-center text-white"
         style={{ backgroundImage: `linear-gradient(to bottom, rgba(141, 141, 231, 0.19), rgba(62, 62, 238, 0.6)), url(${Site})` }}
       >
-        {/* Overlay for better readability */}
         <div className="absolute inset-0 bg-opacity-50"></div>
 
         <main className="relative z-10">
           <ul className="ml-5 lg:ml-20 flex flex-row items-center justify-between">
             <li className="flex flex-row items-center">
-            <Link to="/" className='flex flex-row'>
+              <Link to="/" className='flex flex-row'>
                 <img src={Logo} alt='PlanWorks' className='w-[50px] h-[50px] mt-10 mr-5 rounded-3xl' />
-                <span className='text-3xl text-white mt-10'>PlanWorks Consulting </span>
-            </Link>
+                <span className='text-3xl text-white mt-10'>PlanWorks Consulting</span>
+              </Link>
             </li>
 
-            {/* Hamburger Icon for Mobile */}
             <li
               className="mt-[45px] mr-5 lg:hidden text-2xl text-white cursor-pointer"
               onClick={toggleMenu}
@@ -141,7 +84,6 @@ const About = () => {
               {isMenuOpen ? <IoIosClose className="text-3xl" /> : <IoIosMenu className="text-3xl" />}
             </li>
 
-            {/* Navigation Links */}
             <li
               className={`mt-[45px] ml-20 text-2xl flex flex-row gap-6 text-white lg:flex ${isMenuOpen ? 'flex bg-black' : 'hidden'} flex-col lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}
             >
@@ -156,7 +98,6 @@ const About = () => {
               <Link to="/contact" className="hover:underline p-2 lg:p-0">Contact</Link>
             </li>
 
-            {/* Search Icon (Hidden on Mobile) */}
             <li
               className="ml-[150px] mt-[45px] text-white cursor-pointer lg:block hidden"
               onClick={togglePopup}
@@ -165,11 +106,8 @@ const About = () => {
             </li>
           </ul>
 
-          {/* Search Popup */}
           <div
-            className={`fixed top-0 left-0 w-full bg-black bg-opacity-90 transition-transform duration-500 ease-in-out ${
-              isPopupVisible ? 'translate-y-0' : '-translate-y-full'
-            }`}
+            className={`fixed top-0 left-0 w-full bg-black bg-opacity-90 transition-transform duration-500 ease-in-out ${isPopupVisible ? 'translate-y-0' : '-translate-y-full'}`}
           >
             <div className="container mx-auto p-5 flex flex-col justify-center items-center h-[300px]">
               <input
@@ -179,7 +117,6 @@ const About = () => {
                 value={searchQuery}
                 onChange={handleSearchInputChange}
               />
-              {/* Display search results */}
               {searchResults.length > 0 && (
                 <div className="w-1/2 bg-white mt-5 rounded-lg shadow-lg max-h-[200px] overflow-y-auto">
                   {searchResults.map((result) => (
@@ -204,13 +141,13 @@ const About = () => {
             </div>
           </div>
         </main>
+
         <h1 className='text-3xl text-white mt-[200px] ml-[20px] lg:ml-[100px] font-bold'>About Us</h1>
       </div>
 
-      {/* Content Sections */}
       <Content />
       <Value />
-      <Projects/>
+      <Projects />
     </div>
   );
 };
