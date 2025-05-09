@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Site from '../images/worker.jpg';
+import Site from '../images/work.jpg';
 import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
@@ -110,12 +110,12 @@ const Project = () => {
           <div className="mb-20 p-8 border border-gray-100 rounded-lg shadow-md bg-gray-50">
             <div className="flex items-center mb-4">
               <span className="text-3xl mr-3">🏗️</span>
-              <h2 className="text-2xl text-black font-bold">Staff Accommodation Camp Development – Refinery Project</h2>
+              <h2 className="text-2xl black font-bold">Staff Accommodation Camp Development – Refinery Project</h2>
             </div>
             <div className="ml-12">
-              <p className="font-semibold text-black mb-2">Client: <span className="font-normal text-black">Confidential</span></p>
-              <p className="font-semibold text-black mb-2">Scope: <span className="text-black font-normal">Planning & Infrastructure Support</span></p>
-              <p className="text-black mt-4">
+              <p className="font-semibold black mb-2">Client: <span className="font-normal">Confidential</span></p>
+              <p className="font-semibold text black mb-2">Scope: <span className="text black font-normal">Planning & Infrastructure Support</span></p>
+              <p className="text black mt-4">
                 PlanWorks provided comprehensive project planning, layout optimization, and progress monitoring 
                 for the development of a fully serviced staff accommodation camp to support refinery operations. 
                 The project included housing, utilities, access roads, and compliance with HSE standards.
@@ -126,13 +126,13 @@ const Project = () => {
           {/* Refinery Quick-Fix Rehabilitation Project */}
           <div className="mb-20 p-8 border border-gray-100 rounded-lg shadow-md bg-gray-50">
             <div className="flex items-center mb-4">
-              <span className="text-black-3xl mr-3">⚙️</span>
-              <h2 className="text-black-2xl font-bold">Refinery Quick-Fix Rehabilitation Project</h2>
+              <span className="text black-3xl mr-3">⚙️</span>
+              <h2 className="text black-2xl font-bold">Refinery Quick-Fix Rehabilitation Project</h2>
             </div>
             <div className="ml-12">
-              <p className="font-semibold text-black mb-2">Client: <span className="font-normal text-black">Confidential</span></p>
-              <p className="font-semibold text-black mb-2">Scope: <span className="font-normal text-black">Planning, Monitoring & Reporting</span></p>
-              <p className="text-black mt-4">
+              <p className="font-semibold text black mb-2">Client: <span className="font-normal text black">Confidential</span></p>
+              <p className="font-semibold text black mb-2">Scope: <span className="font-normaltext black">Planning, Monitoring & Reporting</span></p>
+              <p className="text black mt-4">
                 PlanWorks was engaged to plan, track, and report on the fast-tracked rehabilitation of critical 
                 refinery units. Our team implemented dynamic scheduling, resource leveling, and progress analysis 
                 to ensure timely execution and visibility for stakeholders under a compressed timeline.
