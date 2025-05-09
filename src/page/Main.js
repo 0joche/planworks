@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header';
 import Cards from './components/Cards';
-import Featured from './components/Featured';
 import Projects from './components/Projects';
 
 const Main = () => {
@@ -19,7 +18,6 @@ const Main = () => {
         </div>
       </div>
       <Cards />
-      <Featured />
       <Projects/>
     </>
   );
