@@ -3,7 +3,7 @@ import Logo from '../images/logo.jpeg';
 import Site from '../images/datas.jpg';
 import { Link } from 'react-router-dom';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
-import { useSearch } from '../page/components/SearchContext'; // Import the useSearch hook
+import { useSearch } from '../components/SearchContext'; // Import the useSearch hook
 import Service from './components/Service';
 import Projects from './components/Projects';
 
