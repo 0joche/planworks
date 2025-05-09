@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Logo from '../images/logo.jpeg';
-import Site from '../images/data.jpg';
+import Logo from '../../images/logo.jpeg';
+import Site from '../../images/data.jpg';
 import { Link } from 'react-router-dom';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import Content from './components/Content';
