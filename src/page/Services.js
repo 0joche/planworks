@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { useSearch } from '../page/components/SearchContext'; // Import the useSearch hook
 import Service from './components/Service';
-import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 const Services = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage hamburger menu visibility
@@ -121,7 +121,7 @@ const Services = () => {
 
       <Service />
 
-      <Projects/>
+      <Footer/>
     </div>
   );
 };
