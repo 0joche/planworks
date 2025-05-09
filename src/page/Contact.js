@@ -4,8 +4,8 @@ import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { useSearch } from '../page/components/SearchContext';
-import emailjs from '@emailjs/browser';
 import Projects from './components/Projects';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
