@@ -4,6 +4,7 @@ import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { useSearch } from '../page/components/SearchContext';
+import Footer from '../components/Footer';
 
 const Project = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -141,7 +142,7 @@ const Project = () => {
         </div>
       </div>
 
-      <Projects />
+      <Footer />
     </div>
   );
 };
