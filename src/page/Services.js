@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { useSearch } from '../page/components/SearchContext'; // Import the useSearch hook
 import Service from './components/Service';
-import Footer from './components/Footer';
+import Projects from './components/Projects';
 
 const Services = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage hamburger menu visibility
@@ -38,10 +38,10 @@ const Services = () => {
           <main className="relative z-10">
             <ul className="ml-5 lg:ml-20 flex flex-row items-center justify-between">
               <li className="flex flex-row items-center">
-              <Link to="/" className='flex flex-row'>
-                <img src={Logo} alt='PlanWorks' className='w-[50px] h-[50px] mt-10 mr-5 rounded-3xl' />
-                <span className='text-3xl text-white mt-10'>PlanWorks Consulting </span>
-            </Link>
+                <Link to="/" className='flex flex-row'>
+                  <img src={Logo} alt='PlanWorks' className='w-[50px] h-[50px] mt-10 mr-5 rounded-3xl' />
+                  <span className='text-3xl text-white mt-10'>PlanWorks Consulting </span>
+                </Link>
               </li>
 
               {/* Hamburger Icon for Mobile */}
@@ -120,8 +120,7 @@ const Services = () => {
       </div>
 
       <Service />
-
-      <Footer/>
+      <Projects />
     </div>
   );
 };
