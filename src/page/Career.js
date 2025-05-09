@@ -3,9 +3,9 @@ import Site from '../images/woman.jpg';
 import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import { useSearch } from '../page/components/SearchContext';
-import Enjoy from './components/Enjoy';
+import { useSearch } from '../page/components/SearchContext'; // Import the useSearch hook
 import Projects from './components/Projects';
+import Enjoy from './components/Enjoy';
 
 const Career = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
