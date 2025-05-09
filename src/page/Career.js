@@ -4,7 +4,7 @@ import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { useSearch } from '../page/components/SearchContext'; // Import the useSearch hook
-import Projects from './components/Projects';
+import Footer from './components/Footer';
 import Enjoy from './components/Enjoy';
 
 const Career = () => {
@@ -124,7 +124,7 @@ const Career = () => {
       <h1 className='text-black text-center text-xl italic md:text-2xl mt-[50px] md:mt-[100px] px-4 md:px-0 mb-20' >
         Check back later for opportunities that align with your skills
       </h1>
-      <Projects />
+      <Footer />
     </div>
   );
 };
