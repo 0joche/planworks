@@ -4,8 +4,8 @@ import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { useSearch } from '../page/components/SearchContext';
-import Footer from './components/Footer';
 import emailjs from '@emailjs/browser';
+import Projects from './components/Projects';
 
 const Contact = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -71,7 +71,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='text-black'>
+    <div className='text-white'>
       <div
         className="h-[400px] relative bg-cover bg-center text-white"
         style={{ backgroundImage: `linear-gradient(to bottom, rgba(141, 141, 231, 0.19), rgba(62, 62, 238, 0.6)), url(${Site})` }}
@@ -83,7 +83,7 @@ const Contact = () => {
             <li className="flex items-center">
               <Link to="/" className='flex flex-row'>
                 <img src={Logo} alt='PlanWorks' className='w-[50px] h-[50px] mt-10 mr-5 rounded-3xl' />
-                <span className='text-3xl text-white mt-10'>PlanWorks Consulting </span>
+                <span className='text-3xl text-white mt-10'>PlanWorks Consulting</span>
               </Link>
             </li>
 
@@ -146,7 +146,7 @@ const Contact = () => {
         <h1 className='text-3xl mt-[200px] ml-[20px] lg:ml-[100px] font-bold'>Contact Us</h1>
       </div>
 
-      <div className='mt-10 p-5 max-w-6xl mx-auto'>
+      <div className='mt-10 p-5 max-w-6xl mx-auto text-black'>
         <h1 className='text-2xl mb-5 font-bold'>Contact Us</h1>
         <p className='mb-5'>We would love to hear from you. Reach out to us via any of the channels below, and our team will get back to you as soon as possible.</p>
         
@@ -240,14 +240,13 @@ const Contact = () => {
                 <p className='text-green-600 mt-2'>Thank you! Your message has been sent successfully.</p>
               )}
               {submitStatus === 'error' && (
-                <p className='text-red-600 mt-2'>Something went wrong. Please try again later.</p>
+                <p className='text-red-600 mt-2'>Something went wrong. Please try sending us a direct email via info@planworks.com.ng.</p>
               )}
             </form>
           </div>
         </div>
       </div>
-
-      <Footer />
+      <Projects />
     </div>
   );
 };
