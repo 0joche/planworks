@@ -3,9 +3,9 @@ import Site from '../images/woman.jpg';
 import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import { useSearch } from '../page/components/SearchContext'; // Import the useSearch hook
-import Footer from './components/Footer';
+import { useSearch } from '../page/components/SearchContext';
 import Enjoy from './components/Enjoy';
+import Projects from './components/Projects';
 
 const Career = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,10 +37,10 @@ const Career = () => {
           {/* Header */}
           <ul className="ml-5 lg:ml-20 flex items-center justify-between">
             <li className="flex items-center">
-            <Link to="/" className='flex flex-row'>
+              <Link to="/" className='flex flex-row'>
                 <img src={Logo} alt='PlanWorks' className='w-[50px] h-[50px] mt-10 mr-5 rounded-3xl' />
-                <span className='text-3xl text-white mt-10'>PlanWorks Consulting </span>
-            </Link>
+                <span className='text-3xl text-white mt-10'>PlanWorks Consulting</span>
+              </Link>
             </li>
 
             {/* Hamburger Icon */}
@@ -52,7 +52,7 @@ const Career = () => {
             <li
               className={`mt-[45px] text-2xl flex gap-6 lg:flex ${
                 isMenuOpen ? 'flex bg-black' : 'hidden'
-              } flex-col  lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}
+              } flex-col lg:flex-row absolute lg:static top-24 left-0 bg-opacity-90 w-full lg:w-auto p-5 lg:p-0`}
             >
               {['Home', 'About', 'Services', 'Team', 'Projects', 'Blog', 'CSR', 'Careers', 'Contact'].map((item, index) => (
                 <Link
@@ -121,10 +121,10 @@ const Career = () => {
 
       {/* Additional Components */}
       <Enjoy />
-      <h1 className='text-black text-center text-xl italic md:text-2xl mt-[50px] md:mt-[100px] px-4 md:px-0 mb-20' >
+      <h1 className='text-black text-center text-xl italic md:text-2xl mt-[50px] md:mt-[100px] px-4 md:px-0 mb-20'>
         Check back later for opportunities that align with your skills
       </h1>
-      <Footer />
+      <Projects />
     </div>
   );
 };
