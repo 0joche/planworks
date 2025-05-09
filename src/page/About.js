@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import Content from './components/Content';
 import Value from './components/Value';
-import Footer from './components/Footer';
+import Projects from './components/Projects';
 
 const About = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -210,7 +210,7 @@ const About = () => {
       {/* Content Sections */}
       <Content />
       <Value />
-      <Footer/>
+      <Projects/>
     </div>
   );
 };
