@@ -3,8 +3,8 @@ import Site from '../images/man.jpg';
 import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import { useSearch } from '../page/components/SearchContext'; // Import the useSearch hook
-import Footer from './components/Footer';
+import { useSearch } from '../page/components/SearchContext';
+import Projects from './components/Projects';
 
 const Blog = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,17 +27,17 @@ const Blog = () => {
     <div className='text-white'>
       <div
         className="h-[400px] relative bg-cover bg-center text-white"
-        style={{ backgroundImage: `linear-gradient(to bottom, rgba(141, 141, 231, 0.19), rgba(62, 62, 238, 0.6)), url(${Site})` }}
+        style={{ backgroundImage: `linear-gradient(to bottom, rgba(145, 145, 241, 0.19), rgba(145, 145, 241, 0.19)), url(${Site})` }}
       >
         <div className="absolute inset-0 bg-opacity-50"></div>
 
         <main className="relative z-10">
           <ul className="ml-5 lg:ml-20 flex items-center justify-between">
             <li className="flex items-center">
-            <Link to="/" className='flex flex-row'>
+              <Link to="/" className='flex flex-row'>
                 <img src={Logo} alt='PlanWorks' className='w-[50px] h-[50px] mt-10 mr-5 rounded-3xl' />
-                <span className='text-3xl text-white mt-10'>PlanWorks Consulting </span>
-            </Link>
+                <span className='text-3xl text-white mt-10'>PlanWorks Consulting</span>
+              </Link>
             </li>
 
             {/* Hamburger Icon */}
@@ -101,7 +101,7 @@ const Blog = () => {
           In our expert project controls blog, you will learn more about the project management industry across the globe and how our zeal and passion earned us a spot among the top project management companies in Nigeria.
         </p>
       </div>
-      <Footer/>
+      <Projects />
     </div>
   );
 };
