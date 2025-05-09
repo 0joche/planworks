@@ -4,7 +4,7 @@ import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { useSearch } from '../page/components/SearchContext';
-import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 const Team = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -122,7 +122,7 @@ const Team = () => {
         </div>
       </div>
 
-      <Projects />
+      <Footer />
     </div>
   );
 };
