@@ -4,7 +4,7 @@ import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { useSearch } from '../page/components/SearchContext'; // Import the useSearch hook
-import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 const Blog = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -101,7 +101,7 @@ const Blog = () => {
           In our expert project controls blog, you will learn more about the project management industry across the globe and how our zeal and passion earned us a spot among the top project management companies in Nigeria.
         </p>
       </div>
-      <Projects/>
+      <Footer/>
     </div>
   );
 };
