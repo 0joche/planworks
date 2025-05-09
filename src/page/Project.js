@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Site from '../images/work.jpg';
+import Site from '../images/worker.jpg';
 import Logo from '../images/logo.jpeg';
 import { IoIosSearch, IoIosMenu, IoIosClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { useSearch } from '../page/components/SearchContext';
-import Footer from '../components/Footer';
+import Projects from './components/Projects';
 
 const Project = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,7 +36,7 @@ const Project = () => {
             <li className="flex items-center">
               <Link to="/" className='flex flex-row'>
                 <img src={Logo} alt='PlanWorks' className='w-[50px] h-[50px] mt-10 mr-5 rounded-3xl' />
-                <span className='text-3xl text-white mt-10'>PlanWorks Consulting</span>
+                <span className='text-3xl text-white mt-10'>PlanWorks Consulting </span>
               </Link>
             </li>
 
@@ -97,7 +97,7 @@ const Project = () => {
         </main>
 
         <h1 className='text-3xl text-white mt-[200px] ml-[20px] lg:ml-[100px] font-bold'>Our Projects</h1>
-        <p className='w-[620px] text-white ml-[20px] lg:ml-[100px]'>
+        <p className='w-[600px] text-white ml-[20px] lg:ml-[100px] '>
           Here are some of the projects we have planned and managed across Nigeria. While some have been successfully completed, others are currently in progress. Explore our portfolio!
         </p>
       </div>
@@ -113,8 +113,8 @@ const Project = () => {
               <h2 className="text-2xl text-black font-bold">Staff Accommodation Camp Development – Refinery Project</h2>
             </div>
             <div className="ml-12">
-              <p className="text-black font-semibold mb-2">Client: <span className="font-normal">Confidential</span></p>
-              <p className="text-black font-semibold mb-2">Scope: <span className="font-normal">Planning & Infrastructure Support</span></p>
+              <p className="font-semibold text-black mb-2">Client: <span className="font-normal text-black">Confidential</span></p>
+              <p className="font-semibold text-black mb-2">Scope: <span className="text-black font-normal">Planning & Infrastructure Support</span></p>
               <p className="text-black mt-4">
                 PlanWorks provided comprehensive project planning, layout optimization, and progress monitoring 
                 for the development of a fully serviced staff accommodation camp to support refinery operations. 
@@ -126,12 +126,12 @@ const Project = () => {
           {/* Refinery Quick-Fix Rehabilitation Project */}
           <div className="mb-20 p-8 border border-gray-100 rounded-lg shadow-md bg-gray-50">
             <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3">⚙️</span>
-              <h2 className="text-2xl text-black font-bold">Refinery Quick-Fix Rehabilitation Project</h2>
+              <span className="text-black-3xl mr-3">⚙️</span>
+              <h2 className="text-black-2xl font-bold">Refinery Quick-Fix Rehabilitation Project</h2>
             </div>
             <div className="ml-12">
-              <p className="text-black font-semibold mb-2">Client: <span className="font-normal">Confidential</span></p>
-              <p className="text-black font-semibold mb-2">Scope: <span className="font-normal">Planning, Monitoring & Reporting</span></p>
+              <p className="font-semibold text-black mb-2">Client: <span className="font-normal text-black">Confidential</span></p>
+              <p className="font-semibold text-black mb-2">Scope: <span className="font-normal text-black">Planning, Monitoring & Reporting</span></p>
               <p className="text-black mt-4">
                 PlanWorks was engaged to plan, track, and report on the fast-tracked rehabilitation of critical 
                 refinery units. Our team implemented dynamic scheduling, resource leveling, and progress analysis 
@@ -142,7 +142,7 @@ const Project = () => {
         </div>
       </div>
 
-      <Footer />
+      <Projects />
     </div>
   );
 };
