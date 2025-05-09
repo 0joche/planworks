@@ -14,7 +14,7 @@ const Footer = () => {
       {/* Social Icons */}
       <div className='flex justify-center gap-6'>
         <a
-          href='https://www.instagram.com'
+          href='https://www.instagram.com/consultplanwork'
           target='_blank'
           rel='noopener noreferrer'
           className='text-white hover:text-gray-300 transition-colors duration-300'
@@ -22,7 +22,7 @@ const Footer = () => {
           <FaInstagram className='w-8 h-8' />
         </a>
         <a
-          href='https://www.facebook.com/planworks'
+          href='https://www.facebook.com/profile.php?id=61558693753986'
           target='_blank'
           rel='noopener noreferrer'
           className='text-white hover:text-gray-300 transition-colors duration-300'
@@ -38,7 +38,7 @@ const Footer = () => {
           <FaTwitter className='w-8 h-8' />
         </a>
         <a
-          href='https://www.whatsapp.com'
+          href='https://wa.me/2348118844282'
           target='_blank'
           rel='noopener noreferrer'
           className='text-white hover:text-gray-300 transition-colors duration-300'
